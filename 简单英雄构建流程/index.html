@@ -51,11 +51,23 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#_3">添加英雄名字</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_4">添加技能效果</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#_5">举例</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_6">测试</a>
+    </li>
     </ul>
                   </li>
               </ul>
               <ul>
                 <li class="toctree-l1"><a class="reference internal" href="../CCA%E8%8B%B1%E9%9B%84/">英雄技能</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../%E6%B5%8B%E8%AF%95%E9%9C%80%E6%B1%82/">测试需求</a>
                 </li>
               </ul>
       </div>
@@ -83,6 +95,9 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="_1">简单英雄构建流程</h1>
+<p>@author：syt</p>
+<p>这是最简单最弱智的英雄的构建的教程(例如monkey)</p>
+<p>一些机制比较特殊的英雄(如后羿需要专门构建动作)的进阶教程请查看其他文档(如果写了的话)</p>
 <h2 id="_2">逻辑概述</h2>
 <p>AllPlayers类下有</p>
 <blockquote>
@@ -94,7 +109,17 @@
 <h2 id="_3">添加英雄名字</h2>
 <p><img alt="image-20240715182209487" src="https://typorasyt.oss-cn-nanjing.aliyuncs.com/202407151822626.png" /></p>
 <p>在HeroManager 对象中下挂了 所有已完成英雄的名字的列表。</p>
-<p>这里添加你要写的英雄的名字，注意遵循命名大小写规则。 (这里hero的复数形式有问题，无伤大雅，找得到就行)</p>
+<p>这里添加你要写的英雄的名字，注意遵循命名大小写规则(中文名就按照中文名英化的规则来)。 (这里hero的复数形式有问题，无伤大雅，找得到就行)</p>
+<h2 id="_4">添加技能效果</h2>
+<p>考虑BeforeAttack和AfterAttack两个类</p>
+<p>找到对应的函数添加几行代码</p>
+<h3 id="_5">举例</h3>
+<p>猴子的伤害要乘以三</p>
+<p>找到BuffAttack函数后，对照名字添加效果</p>
+<p><img alt="image-20240715220631017" src="https://typorasyt.oss-cn-nanjing.aliyuncs.com/202407152206153.png" /></p>
+<h2 id="_6">测试</h2>
+<p>保存好文件后</p>
+<p>进行简单测试，并且把添加到测试需求中，等待测试选手完成</p>
               
             </div>
           </div><footer>
