@@ -1,0 +1,10 @@
+site_name: CCA Tutorial
+nav: 
+  - Home: index.md  
+  - About: about.md
+  - Tutorial:  
+    - Introduction: tutorial/introduction.md  
+    - Installation: tutorial/installation.md  
+    - Usage: tutorial/usage.md
+  - Contact: contact.md 
+theme: readthedocs
