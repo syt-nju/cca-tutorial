@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>About - CCA Tutorial</title>
+    <title>添加英雄 - CCA Tutorial</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "About";
-        var mkdocs_page_input_path = "about.md";
+        var mkdocs_page_name = "\u6dfb\u52a0\u82f1\u96c4";
+        var mkdocs_page_input_path = "\u7b80\u5355\u82f1\u96c4\u6784\u5efa\u6d41\u7a0b.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -43,13 +43,19 @@
                 <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
                 </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">About</a>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">Tutorial</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../%E7%AE%80%E5%8D%95%E8%8B%B1%E9%9B%84%E6%9E%84%E5%BB%BA%E6%B5%81%E7%A8%8B/">添加英雄</a>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">添加英雄</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_2">逻辑概述</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_3">添加英雄名字</a>
+    </li>
+    </ul>
                   </li>
               </ul>
       </div>
@@ -66,7 +72,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">About</li>
+          <li class="breadcrumb-item">Tutorial</li>
+      <li class="breadcrumb-item active">添加英雄</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -75,13 +82,25 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <p>CCA开发的文档</p>
+                <p>[toc]</p>
+<h1 id="_1">简单英雄构建流程</h1>
+<h2 id="_2">逻辑概述</h2>
+<p>AllPlayers类下有</p>
+<blockquote>
+<p>public List<Hero> heroes;</p>
+</blockquote>
+<p>具体内容请自行查阅，里面存储的核心内容即hero.heroname</p>
+<p>后在BeforeAttack和AfterAttack中添加对应内容</p>
+<p>(注：instance为玩家动作选择后，描述实际造成效果的类，对其的修改就是对最终效果的修改)</p>
+<h2 id="_3">添加英雄名字</h2>
+<p><img alt="image-20240715182209487" src="https://typorasyt.oss-cn-nanjing.aliyuncs.com/202407151822626.png" /></p>
+<p>在HeroManager 对象中下挂了 所有已完成英雄的名字的列表。</p>
+<p>这里添加你要写的英雄的名字，注意遵循命名大小写规则。 (这里hero的复数形式有问题，无伤大雅，找得到就行)</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../%E7%AE%80%E5%8D%95%E8%8B%B1%E9%9B%84%E6%9E%84%E5%BB%BA%E6%B5%81%E7%A8%8B/" class="btn btn-neutral float-right" title="添加英雄">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../about/" class="btn btn-neutral float-left" title="About"><span class="icon icon-circle-arrow-left"></span> Previous</a>
     </div>
 
   <hr/>
@@ -104,10 +123,8 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../about/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
-    
-      <span><a href="../%E7%AE%80%E5%8D%95%E8%8B%B1%E9%9B%84%E6%9E%84%E5%BB%BA%E6%B5%81%E7%A8%8B/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
