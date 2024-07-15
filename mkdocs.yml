@@ -1,7 +1,9 @@
 site_name: CCA Tutorial
 nav: 
-  - Home: index.md  
-  - About: about.md
+  - Home: home.md  
   - Tutorial:  
-    - 添加英雄: 简单英雄构建流程.md
+    - 网站修改教程: 网站修改教程.md
+    - 如何添加英雄: 简单英雄构建流程.md
+  - 英雄技能:  CCA英雄.md
+  - 测试需求: 测试需求.md
 theme: readthedocs

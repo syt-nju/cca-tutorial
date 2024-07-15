@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>英雄技能 - CCA Tutorial</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\u82f1\u96c4\u6280\u80fd";
+        var mkdocs_page_input_path = "CCA\u82f1\u96c4.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> CCA Tutorial
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../home/">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tutorial</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../%E7%BD%91%E7%AB%99%E4%BF%AE%E6%94%B9%E6%95%99%E7%A8%8B/">网站修改教程</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../%E7%AE%80%E5%8D%95%E8%8B%B1%E9%9B%84%E6%9E%84%E5%BB%BA%E6%B5%81%E7%A8%8B/">如何添加英雄</a>
+                  </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">英雄技能</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#hon">hon</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#20">吕布 20</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#40">华雄 40</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#20_1">超级兵 20</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15">貂蝉 15</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#20_2">曹操 20</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15_1">张角 15 *</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#40_1">李存勖 40</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15_2">于吉 15 *</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15_3">海盗 15</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#20_3">盾山 20</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#6">僵尸 6</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#18">光滑墙面 18 *</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#18_1">粗糙墙面 18 *</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#20_4">汤姆 20</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15_4">杰瑞 15</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#18_2">侍卫 18</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#18_3">剑客 18</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#12">大剑师 12</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#18_4">牛仔 18</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#6_1">马索尔 6</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15_5">班纳 15</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#kyh">kyh</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#12_1">猴子 12 *</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15_6">后羿 15</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15_7">扁鹊 15 *</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#20_5">张飞（旧） 20</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#30">亚瑟 30 *</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15_8">妲己 15 *</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15_9">典韦 15 *</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#20_6">钟馗 20 *</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15_10">诸葛亮 15 *</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#20_7">程咬金 20 *</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#12_2">小鲁班 12 *</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lmh">lmh</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#15_11">嬴政 15</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#12_3">李儒 12</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#20_8">庄周20</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15_12">周瑜 15</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15_13">小乔 15</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15_14">兰陵王 15</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15_15">马超 15</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15_16">姜维 15</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15_17">李淳风 15</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#3">吉尔伽美什 3</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#18_5">高文 18</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15_18">黑无常 15</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15_19">白无常 15</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15_20">判官 15</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#18_6">孟婆 18</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#20_9">秦广王 20</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15_21">袁天罡 15</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#18_7">兰斯洛特 18</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15_22">莫德雷德 15</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15_23">蜘蛛 15</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15_24">花木兰 15</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15_25">武则天 15</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15_26">鬼谷子 15</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15_27">后卿 15</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#18_8">赢勾 18</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15_28">旱魃 15</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_2">将臣：?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_3">狼王</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#phr">phr</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#15_29">孙策 15</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../%E6%B5%8B%E8%AF%95%E9%9C%80%E6%B1%82/">测试需求</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">CCA Tutorial</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">英雄技能</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="_1">非系列英雄</h2>
+<h3 id="hon">hon</h3>
+<h4 id="20">吕布 <code>20</code></h4>
+<ul>
+<li>无双
+    &gt; <strong>锁定技</strong> 攻击力等级恒+0.5n，n为场上人数</li>
+</ul>
+<h4 id="40">华雄 <code>40</code></h4>
+<ul>
+<li>耀武
+    &gt; <strong>锁定技</strong> 对你造成伤害的玩家获得一发子弹</li>
+</ul>
+<h4 id="20_1">超级兵 <code>20</code></h4>
+<ul>
+<li>冲锋
+    &gt; <strong>行动技</strong> 可以三拔，三补</li>
+</ul>
+<h4 id="15">貂蝉 <code>15</code></h4>
+<ul>
+<li>离间
+    &gt; <strong>行动技</strong> 消耗一发子弹，指定两位玩家，其中下回合没有对对方使用攻击行动者失去n!点体力,
+    n为你发动此技能的次数</li>
+</ul>
+<h4 id="20_2">曹操 <code>20</code></h4>
+<ul>
+<li>奸雄
+    &gt; <strong>锁定技</strong> 受到攻击伤害时，获得此攻击所消耗的资源</li>
+</ul>
+<h4 id="15_1">张角 <code>15</code> *</h4>
+<ul>
+<li>雷击
+    &gt; 你的防御或反弹行动生效后，你可以对一位玩家使用技能<em>雷击</em>：造成三点无来源伤害</li>
+<li>黄天
+    &gt; <strong>锁定技</strong> 你获得所有无来源伤害的人头收益</li>
+</ul>
+<h4 id="40_1">李存勖 <code>40</code></h4>
+<ul>
+<li>
+<p>三箭之誓
+    &gt; <strong>锁定技</strong> 游戏开始时，你获得三把剑</p>
+</li>
+<li>
+<p>骁勇
+    &gt; <strong>锁定技</strong> 伤害翻n倍，n为血量的十位数</p>
+</li>
+<li>
+<p>俳优
+    &gt; <strong>锁定技</strong> 若你的血量为全场最高，则你每回合流失两点体力</p>
+</li>
+</ul>
+<h4 id="15_2">于吉 <code>15</code> *</h4>
+<ul>
+<li>蛊惑
+    &gt; 待设计</li>
+</ul>
+<h4 id="15_3">海盗 <code>15</code></h4>
+<ul>
+<li>火药桶
+    &gt; <strong>行动技</strong> 补给，获得5发子弹</li>
+</ul>
+<h4 id="20_3">盾山 <code>20</code></h4>
+<ul>
+<li>
+<p>天地化盾
+    &gt; 当你防御或反弹行动生效时，你获得一个<code>化盾</code>标记</p>
+</li>
+<li>
+<p>无尽之盾
+    &gt; 你一回合可以同时进行n个防御或n个反弹，n为你<code>化盾</code>标记数</p>
+</li>
+</ul>
+<h4 id="6">僵尸 <code>6</code></h4>
+<ul>
+<li>
+<p>不死
+    &gt; <strong>锁定技</strong> 回合结束阶段死亡结算前，你的命数变为你的命数的绝对值</p>
+</li>
+<li>
+<p>自伤
+    &gt; 你可以对自己进行攻击</p>
+</li>
+</ul>
+<h4 id="18">光滑墙面 <code>18</code> *</h4>
+<ul>
+<li>
+<p>完全弹性碰撞
+    &gt; 你可以一回合同时执行两个反弹行动</p>
+</li>
+<li>
+<p>镜面反射
+    &gt; 你的反弹伤害翻3倍作用在攻击者身上</p>
+</li>
+</ul>
+<h4 id="18_1">粗糙墙面 <code>18</code> *</h4>
+<ul>
+<li>
+<p>完全非弹性碰撞
+    &gt; 你的反弹行动消耗翻倍，但持续3回合</p>
+</li>
+<li>
+<p>漫反射
+    &gt; 当你的反弹行动生效时，其伤害作用于全场所有玩家</p>
+</li>
+</ul>
+<h4 id="20_4">汤姆 <code>20</code></h4>
+<ul>
+<li>
+<p>捕鼠能手
+    &gt; <strong>锁定</strong> 你对一个玩家造成伤害后，其获得一个<code>鼠</code>标记</p>
+</li>
+<li>
+<p>物种优势
+    &gt; <strong>锁定</strong> 你对拥有<code>鼠</code>标记的玩家，攻击力+0.5</p>
+</li>
+<li>
+<p>火箭专家
+    &gt; <strong>主动</strong> 在回合开始阶段，你可以选择将一位拥有n（n&gt;0）个<code>鼠</code>标记的玩家梆上火箭并点燃引线，此时将进入30/n(向上取整)的燃烧倒计时，倒计时为0的回合开始阶段开始时，火箭上的玩家将被“放飞”，立即结算死亡</p>
+</li>
+<li>
+<p>熊熊燃烧
+    &gt; <strong>锁定</strong> 你对在火箭上的玩家攻击生效，其引线倒计时加速一回合，火箭上的玩家对你的攻击生效，其引线减速一回合；若在火箭上的玩家被和平直接命中，则其立刻被放飞</p>
+</li>
+<li>
+<p>乘胜追击
+    &gt; <strong>锁定</strong> 当有一位玩家被放飞时，你获得其人头收益并回复四点体力</p>
+</li>
+</ul>
+<h4 id="15_4">杰瑞 <code>15</code></h4>
+<ul>
+<li>鸟哨 
+    &gt; <strong>主动</strong> 回合开始阶段，你可以消耗2n发子弹召唤NPC金丝雀
+    &gt; <strong>金丝雀属性</strong> HP:2*场上人数，每回合对场上所有人进行一个造成两点伤害和眩晕的<code>爆竹投掷</code>，其攻击力等于给枪，可以被单挡和双挡防御，被反弹反弹。金丝雀不受<code>爆竹投掷</code>伤害</li>
+</ul>
+<h4 id="18_2">侍卫 <code>18</code></h4>
+<p>（未测试）</p>
+<ul>
+<li>
+<p>警戒
+    &gt; <strong>行动</strong> 消耗4把剑，此回合你受到伤害-1，行动阶段结束时，你可以选择两项：1.获得等同于场上子弹类攻击和补给个数的子弹数，2.获得等同于场上刀剑类攻击和补给个数的刀剑数</p>
+</li>
+<li>
+<p>皇家火炮
+    &gt; <strong>限定技</strong> 回合开始阶段，你可以消耗2n把剑，进入n回合的<code>开炮</code>状态，获得两层护盾，并且<code>开炮</code>状态下子弹类攻击消耗-1，伤害+1</p>
+</li>
+</ul>
+<h4 id="18_3">剑客 <code>18</code></h4>
+<ul>
+<li>连斩
+    &gt; <strong>锁定</strong> 当你刀剑攻击首次命中一位玩家时，你下回合获得无双
+    &gt; <strong>主动</strong> 当你刀剑攻击连续二次命中一位玩家时，你可以令对手眩晕，你所有剑进入可用状态，并且下回合获得<strong>连刺</strong>，且所有刺、砍、鬼斩均只需消耗一把剑
+    &gt; 当你的刀剑攻击连续三次命中一位玩家时，统计次数清零</li>
+</ul>
+<h4 id="12">大剑师 <code>12</code></h4>
+<ul>
+<li>
+<p>神速
+    &gt; <strong>锁定</strong> 你的刀剑攻击每生效一次，你获得一把剑</p>
+</li>
+<li>
+<p>剑道
+    &gt; <strong>锁定</strong> 你的刀剑攻击力+0.5</p>
+</li>
+<li>
+<p>连斩
+    &gt; 同<strong>剑客</strong></p>
+</li>
+</ul>
+<h4 id="18_4">牛仔 <code>18</code></h4>
+<ul>
+<li>
+<p>双枪
+    &gt; <strong>主动</strong> 你可以在多人时对一位玩家使用双枪和双RPG</p>
+</li>
+<li>
+<p>枪法
+    &gt; 你的子弹消耗之后，不会消失，而是像剑那样进入CD</p>
+</li>
+</ul>
+<h4 id="6_1">马索尔 <code>6</code></h4>
+<ul>
+<li>铁血
+    &gt; <strong>主动</strong> 当你生命力&lt;=0时，本回合回合结束阶段死亡结算前，你可以发动该技能进入<strong>铁血</strong>状态，该状态下你获得<strong>无双</strong>和<strong>猴子的技能</strong>，若你在三回合内造成总计大于等于10点伤害，则你满血复活，否则你死亡</li>
+</ul>
+<h4 id="15_5">班纳 <code>15</code></h4>
+<ul>
+<li>暴怒
+    &gt; 当你体力值小于等于5时，你进入<code>暴怒状态</code>，获得5回合伤害*4，霸体和锁血，5回合后你死亡。</li>
+</ul>
+<h3 id="kyh">kyh</h3>
+<h4 id="12_1">猴子 <code>12</code> *</h4>
+<ul>
+<li>技能名（待定）
+    &gt; 伤害翻3倍</li>
+</ul>
+<h4 id="15_6">后羿 <code>15</code></h4>
+<ul>
+<li>射日
+    &gt; <strong>行动技</strong> 消耗两发子弹，攻击力为4.5，造成三点伤害和眩晕，挡可以防止眩晕但不能防止伤害，可以被反弹</li>
+</ul>
+<h4 id="15_7">扁鹊 <code>15</code> *</h4>
+<ul>
+<li>下毒
+    &gt; 当你对一个角色造成n点伤害时，你可以选择发动该技能使其进入<strong>中毒</strong>状态，持续之后的两回合，每回合失去n点体力，（此处待商榷），若角色在<strong>中毒</strong>状态中死亡，则你获得其人头收益</li>
+</ul>
+<h4 id="20_5">张飞（旧） <code>20</code></h4>
+<ul>
+<li>咆哮
+    &gt; <strong>行动技</strong> 在回合内，你可以发动该技能使自己进入三回合的免伤状态，每局游戏限三次</li>
+</ul>
+<h4 id="30">亚瑟 <code>30</code> *</h4>
+<ul>
+<li>
+<p>圣剑
+    &gt; 你不能补子弹</p>
+</li>
+<li>
+<p>大宝剑
+    &gt; <strong>行动技</strong> 消耗20把剑，效果等同于核弹，不能被普通反弹反弹，但可以被镜面反射。</p>
+</li>
+</ul>
+<h4 id="15_8">妲己 <code>15</code> *</h4>
+<ul>
+<li>技能
+    &gt; 当你的攻击生效时，你可以对目标角色造成眩晕</li>
+</ul>
+<h4 id="15_9">典韦 <code>15</code> *</h4>
+<ul>
+<li>技能
+    &gt; 你一回合可以行动两次</li>
+</ul>
+<h4 id="20_6">钟馗 <code>20</code> *</h4>
+<ul>
+<li>技能
+    &gt; <strong>被动</strong> 当你即将进行死亡结算时，你可以对一位玩家使用造成10点伤害，3点溅射伤害的“大核弹”</li>
+</ul>
+<h4 id="15_10">诸葛亮 <code>15</code> *</h4>
+<ul>
+<li>连弩
+    &gt; 你每造成一此伤害，你获得一个<strong>连弩</strong>标记，你的伤害翻（n%5+1）倍，n为你总共的标记数</li>
+</ul>
+<h4 id="20_7">程咬金 <code>20</code> *</h4>
+<ul>
+<li>技能
+    &gt; <strong>锁定技</strong> 当你生命值&lt;=10时，你伤害 <em>2，当生命值&lt;=5时，你伤害再 </em>2</li>
+</ul>
+<h4 id="12_2">小鲁班 <code>12</code> *</h4>
+<ul>
+<li>机枪
+    &gt; <strong>行动技</strong> 消耗n发子弹，你可以对n个人使用该行动，效果相当于造成2n点伤害的给枪</li>
+</ul>
+<h3 id="lmh">lmh</h3>
+<h4 id="15_11">嬴政 <code>15</code></h4>
+<ul>
+<li>御剑
+    &gt; <strong>锁定技</strong> 当你拔剑对自己生效时，可以额外获得8把剑。</li>
+</ul>
+<h4 id="12_3">李儒 <code>12</code></h4>
+<ul>
+<li>
+<p>焚城
+    &gt;可于第二回合及其后的回合开始阶段发动，发动后的每一个回合中，没有消耗资源的其他角色均受到来源于你的1点伤害。</p>
+</li>
+<li>
+<p>绝策
+    &gt;<strong>锁定技</strong>攻击你但未对你造成伤害的角色将眩晕一回合。</p>
+</li>
+</ul>
+<h4 id="20_8">庄周<code>20</code></h4>
+<ul>
+<li>逍遥
+    &gt; <strong>锁定技</strong> 你无法成为其他角色技能的作用对象，你攻击和被攻击时无视对方的技能效果。</li>
+</ul>
+<h4 id="15_12">周瑜 <code>15</code></h4>
+<ul>
+<li>反间
+    &gt; 回合开始阶段，你可以对一名角色发动技能，若下一回合你未对其进行攻击且其未对你造成伤害，则你对其造成n+1点伤害并增加一个标记（n为标记数且最多为5）</li>
+</ul>
+<h4 id="15_13">小乔 <code>15</code></h4>
+<ul>
+<li>天香
+    &gt; <strong>主动</strong> 你可以将本回合受到的所有伤害转移给一名其他角色并令其选择一项：1.其眩晕一轮 2.你获得n发子弹（n为转移的伤害数）。若你发动此技能的回合未受到伤害，则你下回合眩晕。</li>
+</ul>
+<h4 id="15_14">兰陵王 <code>15</code></h4>
+<ul>
+<li>入阵 
+    &gt;若你持续4回合未攻击，则你进入如下状态：1.伤害+6，2.受伤-1，3.攻击力+2.5</li>
+</ul>
+<h4 id="15_15">马超 <code>15</code></h4>
+<ul>
+<li>
+<p>铁骑
+    &gt;回合开始时，你可以失去一点体力并指定一名角色，然后你本回合对其造成的伤害+2。若你成功对其造成伤害，其下回合眩晕。</p>
+</li>
+<li>
+<p>雪恨
+    &gt;你对上回合对你造成过伤害的角色发动<strong>铁骑</strong>无需失去体力</p>
+</li>
+</ul>
+<h4 id="15_16">姜维 <code>15</code></h4>
+<ul>
+<li>
+<p>斗阵
+    &gt; 每三回合限一次，回合开始时，你可以选择一项：1.指定一名角色并说出一种行动名，若其采取此行动，则你获得2个资源且本回合受伤-1 2.指定一名角色并令其说出一种行动名，若你本回合未采取此行动，则你获得2个资源且本回合伤害+1</p>
+</li>
+<li>
+<p>复国的共叛
+    &gt; <strong>限定技</strong>，回合开始时，你可以将任意个资源交给一名其他角色，此后你与其造成的伤害+n，受到其他角色的伤害+n（n为你交给其的资源总数）</p>
+</li>
+</ul>
+<h4 id="15_17">李淳风 <code>15</code></h4>
+<p><em>你能且仅能使用以下行动</em></p>
+<ul>
+<li>
+<p>天灾
+    &gt;指上，本回合未消耗资源的其他角色流失两点体力（至多连续发动两回合）</p>
+</li>
+<li>
+<p>人祸 
+    &gt;指下，本回合消耗资源的其他角色流失两点体力（至多连续发动两回合）</p>
+</li>
+<li>
+<p>嫁祸 
+    &gt;指别人，若本回合你即将受到伤害，则其替你承担这些伤害；反之，则你替其承担其即将受到的伤害</p>
+</li>
+<li>
+<p>独善
+    &gt;指自己，若你本回合即将受到攻击造成的伤害，则所有这样的攻击目标改为攻击者本人，并附带眩晕效果；反之，则视为你过来【鼓战】指左，本回合未攻击者眩晕，攻击者资源翻倍</p>
+</li>
+<li>
+<p>息兵
+    &gt;指右，本回合攻击者眩晕，未攻击者资源翻倍</p>
+</li>
+<li>
+<p>鼓战
+    &gt;指左，本回合未攻击者眩晕，攻击者资源翻倍</p>
+</li>
+<li>
+<p>天谴
+    &gt;若4回合内全场其他角色的体力值未发生变化，则你死亡</p>
+</li>
+</ul>
+<h4 id="3">吉尔伽美什 <code>3</code></h4>
+<ul>
+<li>
+<p>王之财宝
+    &gt;<strong>锁定技</strong> 你拥有无限资源。</p>
+</li>
+<li>
+<p>王之傲慢
+    &gt;你第一回合无法攻击，你无法受到负面效果控制，挑衅对你无效，且你无视本回合受到你伤害的角色对你造成的伤害。</p>
+</li>
+</ul>
+<h4 id="18_5">高文 <code>18</code></h4>
+<ul>
+<li>太阳骑士
+    &gt;<strong>锁定技</strong> 若场上有半数以上角色未在攻击，则你伤害*3且受伤/3（向上取整）</li>
+</ul>
+<h4 id="15_18">黑无常 <code>15</code></h4>
+<ul>
+<li>尸毒 
+    &gt;当你对一名没有“尸毒”标记的其他角色造成伤害时你可令其获得一个标记，当拥有“尸毒”标记的角色攻击你且未对你造成伤害时你可令其获得一个标记，当拥有标记的角色对你造成伤害时其失去所有标记。回合结束时，你对拥有n个标记的角色造成n点伤害。</li>
+</ul>
+<h4 id="15_19">白无常 <code>15</code></h4>
+<ul>
+<li>
+<p>勾魂 
+    &gt;当你对一名未攻击你且不处于“附身”状态的角色造成伤害时你可令其眩晕</p>
+</li>
+<li>
+<p>索命
+    &gt;当你对一名处于眩晕状态的角色造成伤害时你可进入“附身”状态。“附身”状态下每回合结束时你将你受到的所有伤害转移给该角色。当该角色对你造成伤害时可解除“附身”状态</p>
+</li>
+</ul>
+<h4 id="15_20">判官 <code>15</code></h4>
+<ul>
+<li>
+<p>批状
+    &gt;<strong>行动技</strong> 你可以消耗一发子弹，令你本回合至多受到一点伤害，且你下次攻击伤害+1（可叠加）</p>
+</li>
+<li>
+<p>断罪
+    &gt;回合开始时，你可在一名角色与你皆同意的情况下令其此后三回合不受任何伤害且造成的伤害+1，三回合后你令其死亡。（若你上回合对其造成过伤害且其体力值不大于3，你可强制发动此技能）</p>
+</li>
+</ul>
+<h4 id="18_6">孟婆 <code>18</code></h4>
+<ul>
+<li>
+<p>轮回
+    &gt;回合开始时，你可在一名角色与你皆同意的情况下获得其若干个技能，然后该角色失去所有技能和资源并把体力回复至体力上限（若你上回合对其造成过伤害且其体力值不大于3，你可强制发动此技能）</p>
+</li>
+<li>
+<p>汤里的佐料
+    &gt;你可令<strong>轮回</strong>的作用对象在技能发动后的第3回合开始造成与受到的伤害均+n（n至多为5）</p>
+</li>
+</ul>
+<h4 id="20_9">秦广王 <code>20</code></h4>
+<ul>
+<li>重甲 
+    &gt;<strong>锁定技</strong> 其他角色攻击你消耗的资源翻倍。</li>
+</ul>
+<h4 id="15_21">袁天罡 <code>15</code></h4>
+<ul>
+<li>
+<p>天罡
+    &gt;当你造成一次伤害时可以获得一个标记（标记数最多为5），你可在以下效果中为每一个新获得的标记分配一个效果：1.伤害+1 2.攻击力+0.5 3.补给时获得的资源+1（最多+2）4.受到的每一次伤害-1（至多-1）5.体力值+2</p>
+</li>
+<li>
+<p>布局 
+    &gt;当你受到伤害时可重新分配标记效果</p>
+</li>
+</ul>
+<h4 id="18_7">兰斯洛特 <code>18</code></h4>
+<ul>
+<li>
+<p>长江骑士
+    &gt;你攻击命中一名角色可选择两项 1.你弃置一个资源并令其弃置两个同种资源    2.令其失去一点体力</p>
+</li>
+<li>
+<p>骑士不死于徒手
+    &gt;若一次攻击未对你生效，你将获得该攻击所消耗的资源</p>
+</li>
+</ul>
+<h4 id="15_22">莫德雷德 <code>15</code></h4>
+<ul>
+<li>
+<p>王剑盗窃者
+    &gt;当你对一名角色造成伤害后，在此后的2回合你可以视为额外拥有n把剑（n为该角色拥有的剑数）</p>
+</li>
+<li>
+<p>向瑞丽的吾父发起叛逆
+    &gt;当你对一名其他角色造成伤害时，你可以令其眩晕。若如此做，你将体力值降为1，下回合攻击力+2且对于眩晕的角色每次可造成n-1点伤害（n为其当前体力值）</p>
+</li>
+</ul>
+<h4 id="15_23">蜘蛛 <code>15</code></h4>
+<ul>
+<li>
+<p>吐丝
+    &gt;当你进行一次补给时，你可以获得一个【网】标记</p>
+</li>
+<li>
+<p>结网
+    &gt;<strong>行动技</strong> 你可以消耗所有【网】标记，免除你本轮受到的所有不大于2n的伤害（n为标记数），然后令伤害来源进入n回合的捕获状态。捕获状态下的角色不能补给和攻击你，且你对其伤害*2</p>
+</li>
+<li>
+<p>产卵
+    &gt;<strong>行动技</strong> 你可以消耗x个资源（x不大于5）回复等量体力，并获得x个【网】标记，且此后你伤害+1（可叠加），若你在产卵期间被攻击命中，则你死亡。</p>
+</li>
+</ul>
+<h4 id="15_24">花木兰 <code>15</code></h4>
+<ul>
+<li>
+<p>愿为市鞍马
+    &gt;<strong>锁定技</strong> 当你进行补给时额外获得一把剑</p>
+</li>
+<li>
+<p>从此替爷征 
+    &gt;你可以消耗3发子弹获得3回合的征战状态，征战状态下你获得技能<strong>无双</strong>，对攻击你的角色造成的伤害x2且附带眩晕效果。状态结束后你可获得n发子弹（n为你在此期间造成的伤害总数）</p>
+</li>
+<li>
+<p>守护
+    &gt;征战状态下你可选定一名角色，在状态结束前所有以其为目标的攻击目标均改为你，且其不能对你造成伤害</p>
+</li>
+</ul>
+<h4 id="15_25">武则天 <code>15</code></h4>
+<ul>
+<li>
+<p>记怨
+    &gt;当一名角色对你一次造成一点以上的伤害后，你可令其获得一个标记</p>
+</li>
+<li>
+<p>生杀予夺
+    &gt;当你对一名角色造成n点伤害后，你可令其获得n个标记</p>
+</li>
+<li>
+<p>母仪天下
+    &gt;当一名角色受到你的核弹造成的伤害时，你清空其所有标记并对其额外造成2^（n）点伤害。（n为其拥有的标记数）</p>
+</li>
+</ul>
+<h4 id="15_26">鬼谷子 <code>15</code></h4>
+<ul>
+<li>
+<p>纵横捭阖 </p>
+<blockquote>
+<p><strong>行动技</strong> 你可以消耗2发子弹指定2名角色，交换其本轮的体力变化情况和获得的资源，然后你获得n发子弹（n为这两名角色体力变化值的绝对值之和）。若你以自己为目标使用该技能，则此后你失去该技能</p>
+</blockquote>
+</li>
+<li>
+<p>明哲保身</p>
+<blockquote>
+<p>若你使用【纵横捭阖】获得的子弹数不大于1，则你本轮至多受到一点伤害</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="15_27">后卿 <code>15</code></h4>
+<ul>
+<li>
+<p>血如泉涌</p>
+<blockquote>
+<p><strong>锁定技</strong>，你造成的伤害*（1+x/2）（x为你已损失的体力值且向下取整）</p>
+</blockquote>
+</li>
+<li>
+<p>泣血</p>
+<blockquote>
+<p>当你造成伤害后你获得2回合的泣血状态，泣血状态下你攻击力+1，获得技能<strong>李代桃僵</strong>且<strong>血如泉涌</strong>变为<strong>非锁定技</strong></p>
+</blockquote>
+</li>
+<li>
+<p>晕血 
+若你一次造成5点以上伤害且2回合内未发动【李代桃僵】，则你死亡</p>
+</li>
+<li>
+<p>李代桃僵 
+当你造成伤害后可与目标互换体力值，若你的体力值因此降低，你获得等于你们体力值差值的护盾</p>
+</li>
+</ul>
+<h4 id="18_8">赢勾 <code>18</code></h4>
+<ul>
+<li>铁壁<blockquote>
+<p>你补子弹时不受子弹攻击伤害，拔剑时不受刀剑攻击伤害</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="15_28">旱魃 <code>15</code></h4>
+<ul>
+<li>
+<p>赤地千里</p>
+<blockquote>
+<p>当你攻击时场上的其他角色无法获得资源</p>
+</blockquote>
+</li>
+<li>
+<p>饿殍</p>
+<blockquote>
+<p>当你对一名其他角色造成伤害时可对其附加一个【旱】标记，存在2回合。带有【旱】标记的角色受到伤害时你对其额外造成2点伤害并将其【旱】标记清零</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="_2">将臣：<code>?</code></h4>
+<ul>
+<li>
+<p>幽魂</p>
+<blockquote>
+<p>你没有体力值，且初始状态下可存活6回合。每当你造成一次伤害即可获得额外的2回合存活时间</p>
+</blockquote>
+</li>
+<li>
+<p>吸血僵尸</p>
+<blockquote>
+<p>当你的存活时间不大于5回合时攻击力+0.5，当你的存活时间大于8回合时伤害*2</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="_3">狼王</h4>
+<ul>
+<li>群狼 <blockquote>
+<p>回合开始时，若场上没有“狼”，你可以失去n点体力，召唤n只“狼”（n至多为5）。当你使用子弹攻击时，每只“狼”对相同目标也进行一次相同攻击。（“狼”无法受到伤害，在攻击受到“反弹”后“狼”消失）</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="phr">phr</h3>
+<h4 id="15_29">孙策 15</h4>
+<ul>
+<li>激励<blockquote>
+<p>你每造成一次伤害，获得一发子弹，下回合伤害翻倍，可以叠加</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="_4">系列英雄</h2>
+<h3 id="_5">西游系列</h3>
+<h4 id="_6">猴子</h4>
+<p>被强行归类的冤种
+（以下记不清了，觉醒技随便写的）</p>
+<h4 id="40_2">猪八戒 <code>40</code> *</h4>
+<ul>
+<li>
+<p>如猪
+    &gt; <strong>被动</strong> 你只能单补单拔</p>
+</li>
+<li>
+<p>继志I
+    &gt; <strong>觉醒</strong> 当你资源数大于你的命数时，你获得<strong>猴子的技能</strong></p>
+</li>
+</ul>
+<h4 id="50">沙僧  <code>50</code> *</h4>
+<ul>
+<li>
+<p>笨拙
+    &gt; <strong>被动</strong> 你不能补给</p>
+</li>
+<li>
+<p>继志II
+    &gt; <strong>觉醒</strong> 当你资源数的两倍大于你命数时，你获得<strong>猪八戒的技能</strong></p>
+</li>
+</ul>
+<h4 id="120">白龙马 <code>120</code></h4>
+<ul>
+<li>
+<p>坐骑
+    &gt; <strong>被动</strong> 你不能补给和过来</p>
+</li>
+<li>
+<p>继志III
+    &gt; <strong>觉醒</strong> 当你连续三回合没有受到伤害时，你获得<strong>沙僧</strong>的技能</p>
+</li>
+</ul>
+<h3 id="_7">刺猬家族</h3>
+<h4 id="20_10">刺猬 <code>20</code></h4>
+<ul>
+<li>连刺
+    &gt; <strong>锁定</strong> 你对一位玩家进行攻击行动时，同时对其进行n个该行动，n为耗尽此资源所需的最小数量
+    &gt; 所有刺猬家族的成员都具有技能<strong>连刺</strong>，此后不再赘述</li>
+</ul>
+<h4 id="12_4">小刺猬 <code>12</code></h4>
+<blockquote>
+<p>你的所有行动消耗/2，向上取整</p>
+</blockquote>
+<h4 id="25">大刺猬 <code>25</code></h4>
+<blockquote>
+<p>你只能拔剑</p>
+</blockquote>
+<h4 id="10">光刺猬 <code>10</code></h4>
+<blockquote>
+<p>你的光剑、光刀只需消耗一把剑，激光枪只需要消耗一发子弹</p>
+</blockquote>
+<h4 id="12_5">刺鲨 <code>12</code></h4>
+<blockquote>
+<p>你拥有技能<strong>鲨鱼</strong></p>
+</blockquote>
+<h4 id="8">狄仁刺猬 <code>8</code></h4>
+<blockquote>
+<p>你拥有<strong>狄仁杰的技能</strong></p>
+</blockquote>
+<h4 id="8_1">嬴政刺猬 <code>8</code></h4>
+<blockquote>
+<p>你拥有<strong>十拔</strong></p>
+</blockquote>
+<h4 id="10_1">海盗刺猬 <code>10</code></h4>
+<blockquote>
+<p>你拥有<strong>火药桶</strong></p>
+</blockquote>
+<h4 id="201">刺猬之父 <code>20/(在场刺猬+1),向上取整</code></h4>
+<blockquote>
+<p>你拥有所有在场刺猬的技能</p>
+</blockquote>
+<h4 id="4">刺猬之母 <code>4</code></h4>
+<blockquote>
+<p>你拥有除刺猬之父外所有刺猬的技能</p>
+</blockquote>
+<h4 id="12_6">小猬兵 <code>12</code></h4>
+<blockquote>
+<p>你的RPG仅需一发子弹，双RPG仅需两发子弹</p>
+</blockquote>
+<h4 id="10_2">大猬兵 <code>10</code></h4>
+<blockquote>
+<p>你的核弹只需要两发子弹</p>
+</blockquote>
+<h4 id="35">豪猪 <code>35</code></h4>
+<blockquote>
+<p>你拥有猪八戒的技能</p>
+</blockquote>
+<h3 id="_8">鲨鱼家族</h3>
+<h4 id="20_11">鲨鱼 <code>20</code></h4>
+<ul>
+<li>鲨鱼<blockquote>
+<p><strong>锁定技</strong> 你的剑数等于你的生命值，你不能补子弹
+鲨鱼家族的所有成员都有技能<strong>鲨鱼</strong>，此后不再赘述</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="30_1">大白鲨 <code>30</code></h4>
+<blockquote>
+<p>你受到子弹伤害*2</p>
+</blockquote>
+<h4 id="15_30">灰鲸鲨 <code>15</code></h4>
+<blockquote>
+<p>你受到子弹伤害/2，向上取整</p>
+</blockquote>
+<h4 id="12_7">刺鲨 <code>12</code></h4>
+<blockquote>
+<p>用有刺猬的技能</p>
+</blockquote>
+<h4 id="15_31">剑齿鲨 <code>15</code></h4>
+<blockquote>
+<p>拥有剑客的技能，且你第一回合不能攻击</p>
+</blockquote>
+<h4 id="15_32">虎鲨 <code>15</code></h4>
+<blockquote>
+<p>拥有<code>无双</code></p>
+</blockquote>
+<h4 id="15_33">锤头鲨 <code>15</code></h4>
+<blockquote>
+<p>刀剑伤害+1</p>
+</blockquote>
+<h4 id="15_34">机械鲨 <code>15</code></h4>
+<blockquote>
+<p>你不能使用剑，你的子弹数恒等于你的命数，你拥有技能<strong>枪法</strong></p>
+</blockquote>
+<h3 id="magic-world">Magic World</h3>
+<ul>
+<li>Magic System
+    &gt; All wizards get one <code>magic power</code> when them take or make damage of any amount</li>
+</ul>
+<h4 id="lord-voldemort-15">Lord Voldemort <code>15</code></h4>
+<ul>
+<li>
+<p>Unforgivable Curses
+    &gt; * <em>Imperio</em>
+    &gt; <strong>Move</strong> 2<code>magic power</code>, the target will do the same action you do last time,can only be effective if the target isn't attacking you,don't have attack level.
+    &gt; * <em>Crucio</em>
+    &gt; <strong>Move</strong> 2<code>magic power</code>，choose one effect: cause 3 or make the target <code>vertigo</code> the next turn,can be blocked by any kind of block,can be rebounced,don't have attack level
+    &gt; * <em>Avada Kedavra</em>
+    &gt; <strong>Move</strong> n-1<code>magic power</code>, n is the HP of the target, immidiately kill the target,can't be blocked, but can be rebounced.</p>
+</li>
+<li>
+<p>Horcrux
+    &gt; <strong>Active</strong> if you killer a player, you can create a Horcrux,when you are going to die, you can choose to destory a Horcrux and return to 5HP</p>
+</li>
+</ul>
+<h4 id="harry-potter-18">Harry Potter <code>18</code></h4>
+<ul>
+<li>
+<p><em>Expelliarmus</em>
+    &gt; <strong>Move</strong> 2<code>magic power</code>,if the target is attacking you,disable this attack, and get rid of the resources he is using to attack you(only for recycling resources like swords)</p>
+</li>
+<li>
+<p><em>Expecto Patronum</em>
+    &gt; <strong>Move</strong> 3<code>magic power</code>,the next 3 turns, you receive 1 point less damage</p>
+</li>
+<li>
+<p><em>Protego</em>
+    &gt; <strong>Move</strong> 3<code>magic power</code>,summon a shield that protect you from all physical damage and spells except the Unforgivable Curses</p>
+</li>
+<li>
+<p><em>Stupefy</em>
+    &gt; <strong>Move</strong> 1<code>magic power</code>,make the target <code>vertigo</code> the next turn, only takes effect when the target is not attacking you or blocking; can be rebounced</p>
+</li>
+</ul>
+<h4 id="snape-12">Snape <code>12</code></h4>
+<ul>
+<li>
+<p><em>Sectumsempra</em>
+    &gt; <strong>Move</strong> 3<code>magic power</code> equals a nock-end chop</p>
+</li>
+<li>
+<p><em>Legilimency</em>
+    &gt; <strong>Active</strong> 1<code>magic power</code> when you cause damage to one player, he needs to tell you what he will do the next turn, this can't take effective in two turns in a row.</p>
+</li>
+</ul>
+<h3 id="cca">CCA玩家系列</h3>
+<h4 id="cca-15">混乱的CCA玩家 <code>15</code></h4>
+<p>（改版，未测试）
+* 黑白颠倒
+    &gt; 回合开始时，你可以指定两个行动并选择一项：1.本回合其所需要资源数对调，2.若都是攻击行动，其本回合攻击力等级和伤害对调</p>
+<h3 id="_9">人名英雄技能</h3>
+<h4 id="1">阿绿 <code>1</code></h4>
+<ul>
+<li>只挑一条<blockquote>
+<p>和你交互的角色体力值均视为只有一条</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="12_8">潘浩然 <code>12</code></h4>
+<ul>
+<li>变换手势<blockquote>
+<p>只要场上大于一半人同意，你就可以变换手势 </p>
+</blockquote>
+</li>
+</ul>
+<h4 id="8_2">界潘浩然 <code>8</code></h4>
+<blockquote>
+<p>只要场上大于等于一半人同意，你就可以变换手势</p>
+</blockquote>
+<h4 id="sp-6">sp潘浩然 <code>6</code></h4>
+<blockquote>
+<p>只要你自己同意，你就意变换手势，CD：1</p>
+</blockquote>
+<h4 id="3_1">神潘浩然 <code>3</code></h4>
+<blockquote>
+<p>只要你自己同意，你就可以变换手势 </p>
+</blockquote>
+<h3 id="_10">沈宇腾</h3>
+<h4 id="_11">老顽童</h4>
+<h4 id="_12"></h4>
+<h2 id="_13">待回忆英雄</h2>
+<p>lel：李元霸，太乙真人</p>
+<p>chl：李牧，白起，廉颇，王翦，姜维，贾诩，哪吒，凯撒，西施，武松，杨玉环，织田信长，东皇太一，转轮王，李信，司马错，干将莫邪，狄仁杰，狄青，钟会，曹丕，
+    姜子牙，王昭君</p>
+<p>dgz：唐僧，
+    刘备，马超，大乔，刘禅，赵云，司马懿，关羽，鲁肃，董卓，陆逊，孙权，黄忠
+    项羽，刘邦，萧何，韩信，冒顿，霍去病
+    共工，祝融，
+    吕不韦，商鞅，吴起，纣王，屈原，老夫子，孙武，墨子，张仪，苏秦，魏无忌，田文，苻坚
+    慕容垂，刘裕</p>
+<p>syt：新唐僧，王也，戏志才，老顽童</p>
+<p>，马良，蒲元，左慈，李白，戏志才，郝昭</p>
+<p>界：界马良，界张飞，界李牧，界张角</p>
+<p>神：神马良，神关羽，神汤姆，神李信，系统</p>
+<p>CCA玩家：愤怒，欠打，暴力，贪婪，无耻，慷慨，坚韧</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../%E7%AE%80%E5%8D%95%E8%8B%B1%E9%9B%84%E6%9E%84%E5%BB%BA%E6%B5%81%E7%A8%8B/" class="btn btn-neutral float-left" title="如何添加英雄"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../%E6%B5%8B%E8%AF%95%E9%9C%80%E6%B1%82/" class="btn btn-neutral float-right" title="测试需求">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../%E7%AE%80%E5%8D%95%E8%8B%B1%E9%9B%84%E6%9E%84%E5%BB%BA%E6%B5%81%E7%A8%8B/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../%E6%B5%8B%E8%AF%95%E9%9C%80%E6%B1%82/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
