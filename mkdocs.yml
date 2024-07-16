@@ -1,9 +1,15 @@
 site_name: CCA Tutorial
 nav: 
   - Home: index.md  
+  - To Newcomers: 
+    - 简介: 简介.md
+    - 简明规则体系: CCA解释-简明.md
   - Tutorial:  
     - 网站修改教程: 网站修改教程.md
     - 如何添加英雄: 简单英雄构建流程.md
-  - 英雄技能:  CCA英雄.md
-  - 测试需求: 测试需求.md
+    - 如何设计关卡: 简单关卡构建流程.md
+  - Infos: 
+    - 英雄文档: CCA英雄.md
+    - 工作任务&测试&反馈: 工作任务.md
+    - 对照表: 对照表.md
 theme: readthedocs
