@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>关于策划 - CCA Tutorial</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\u5173\u4e8e\u7b56\u5212";
+        var mkdocs_page_input_path = "\u5173\u4e8e\u7b56\u5212.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> CCA Tutorial
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">To Newcomers</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../%E7%AE%80%E4%BB%8B/">简介</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CCA%E8%A7%A3%E9%87%8A-%E7%AE%80%E6%98%8E/">简明规则体系</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tutorial</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../%E7%BD%91%E7%AB%99%E4%BF%AE%E6%94%B9%E6%95%99%E7%A8%8B/">网站修改教程</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../%E7%AE%80%E5%8D%95%E8%8B%B1%E9%9B%84%E6%9E%84%E5%BB%BA%E6%B5%81%E7%A8%8B/">如何添加英雄</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../%E7%AE%80%E5%8D%95%E5%85%B3%E5%8D%A1%E6%9E%84%E5%BB%BA%E6%B5%81%E7%A8%8B/">如何设计关卡</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Infos</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../CCA%E8%8B%B1%E9%9B%84/">英雄文档</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../%E5%B7%A5%E4%BD%9C%E4%BB%BB%E5%8A%A1/">工作任务&测试&反馈</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../%E5%AF%B9%E7%85%A7%E8%A1%A8/">对照表</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">关于策划</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_2">一般人机逻辑</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_3">教程人机逻辑</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">CCA Tutorial</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Infos</li>
+      <li class="breadcrumb-item active">关于策划</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h3 id="_1">人机现在逻辑阐述</h3>
+<h4 id="_2">一般人机逻辑</h4>
+<pre><code class="language-c">//快速战斗阶段
+if (status.HP &lt;= 2)
+    SetMoveList(ChooseFourCatagoryByPercent(25, 30, 25, 20));
+//发育阶段
+else if (status.sword + status.bullet &lt;= 3)
+    SetMoveList(ChooseFourCatagoryByPercent(40, 25, 20, 15));
+//中期阶段
+else if (status.sword + status.bullet &lt;= 6)
+    SetMoveList(ChooseFourCatagoryByPercent(25, 35, 30, 10));
+//后期阶段
+else
+    SetMoveList(ChooseFourCatagoryByPercent(10, 50, 30, 10));
+//ChooseFourCatagoryByPercent的作用是，给各类行动，依次是补给，进攻，防御，反弹，其他中指定概率
+//人机会先生成可用行动列的集合（对于除攻击、挑衅外，行动“列”只有一种行动），并在指定类型后，选择特定的行动
+//人机不会做你没子弹的时候挡这种傻逼操作
+</code></pre>
+<h4 id="_3">教程人机逻辑</h4>
+<p>在一般人机逻辑基础上做一些修正，例如：</p>
+<pre><code class="language-c">//教程第二关的人机
+public void DrunkardMove1()
+{
+    ExperimentalMove();
+    //若是防御，反弹行动，进行微调-》
+    if (moveList.moveList[0].catagory == 4 || moveList.moveList[0].catagory == 5)
+    {
+        //反弹概率为60%，单挡概率30%，挡概率10%
+        List&lt;NameAndPercent&gt; nameAndPercents = new List&lt;NameAndPercent&gt;()
+        {
+            new NameAndPercent(60,&quot;Rebounce&quot;),
+            new NameAndPercent(30,&quot;Block&quot;),
+            new NameAndPercent(10,&quot;Double Block&quot;)
+        };
+        SetMoveList(RobotActionCheck.GenerateAvailableActionListAccordingToPercent(ListCatagories.Defence, nameAndPercents));
+    }
+    //若是进攻行动，进行微调-》
+    if (moveList.moveList[0].catagory == 2)
+    {
+        List&lt;NameAndPercent&gt; nameAndPercents = new List&lt;NameAndPercent&gt;()
+        {
+            //双枪概率90%，单枪概率10%
+            new NameAndPercent(90,&quot;Double Shoot&quot;),
+            new NameAndPercent(10,&quot;Shoot&quot;)
+        };
+        SetMoveList(RobotActionCheck.GenerateAvailableActionListAccordingToPercent(ListCatagories.Attack, nameAndPercents));
+    }
+}
+</code></pre>
+<p>其目的是为了使其更好地适应关卡。
+而策划的工作也包含了做好这个教程人机的“行动数值微调”，保证其更适应关卡环境，不太傻，也不太聪明。
+此外，欢迎对人机逻辑提出修改建议。
+最后，尽量避免让人机作弊。</p>
+<h3 id="_4">教程关卡</h3>
+<p>基于测试反馈给出的一些修正</p>
+<h4 id="_5">代码工作</h4>
+<p>1.我们需要有快捷键来提高手感
+2.pvz的卡牌解锁逻辑
+3.AB两条线
+4.资源继承逻辑
+5.彩蛋关应该有更清楚的提示
+6.重来时，不要再弹出剧情
+7.优化的三头犬</p>
+<h4 id="_6">策划工作</h4>
+<h5 id="_7">教程要解决的核心问题</h5>
+<p>1.每个行动最好都有用武之地
+2.玩家刚解锁了新行动，最好很快就能派上用场，目前局外人游玩体验是完全记不住卡牌攻防关系也不想去记，就想着补给补给给枪给枪，也从来不防御。
+3.关卡往往太短，玩家还没搞清楚新行动，有时候就莫名奇妙赢了。</p>
+<h5 id="_8">我想到的一些改进</h5>
+<p>在每关列出来的行动，是我认为玩家在这关中，应该学会的核心行动，打星号为玩家不会，但人机会
+在以下的修正中，我加入了一些关卡以增加某些行动的出场率和调整了玩家新学行动-使用该行动的关系
+- Level1</p>
+<blockquote>
+<p>补给，给枪，挡
+建议将玩家改为999血？
+- Level2
+双枪与双挡
+提高醉汉防御时单挡、弹的概率，和攻击时双枪的几率
+- +Level2.5
+反弹
+出一个群战，每个人开局都有子弹，并且杀死人会有人头奖励
+- Level 3
+挑衅*
+刨去玩家的资源优势，让挑衅恶心玩家就好了
+合法挑衅，不至于太变态</p>
+</blockquote>
+<ul>
+<li>
+<p>Level3.5</p>
+<blockquote>
+<p>挑衅
+出一关100%预判人机(提前告知玩家)，在初始时给予玩家2命1发，敌人1命无子弹，玩家在此过程中学习挑衅挡的手法</p>
+</blockquote>
+</li>
+<li>
+<p>Level4-1</p>
+<blockquote>
+<p>重挡
+让玩家用枪的攻击去克制剑</p>
+</blockquote>
+</li>
+<li>Level4-2,4-3<blockquote>
+<p>砍和刺
+通过第资源累积逻辑，让玩家尽可能地去累积刀剑类资源</p>
+</blockquote>
+</li>
+<li>Level5<blockquote>
+<p>亮剑
+下一关，群战，玩家学会了刚刚学习的亮剑的用法</p>
+</blockquote>
+</li>
+<li>
+<p>Level6</p>
+<blockquote>
+<p>缴械
+下一关，鬼斩，在这一关，其实玩家在对剑鬼攻击的预判，缴械的收益其实远高于挡或者双挡</p>
+</blockquote>
+</li>
+<li>
+<p>LevelA-0.5 </p>
+<blockquote>
+<p>鬼斩
+这一关应该给玩家的鬼斩设计一个用武之地，
+建议：开局玩家5把剑，0子弹，敌人3子弹，但敌人不会RPG，玩家2血敌人3血
+或：设计出朴素的6剑vs3命，但容错有点低</p>
+</blockquote>
+</li>
+<li>
+<p>LevelA-1 妙手神偷</p>
+<blockquote>
+<p>过来*</p>
+</blockquote>
+</li>
+<li>
+<p>LevelA-2 必输</p>
+<blockquote>
+<p>无</p>
+</blockquote>
+</li>
+<li>LevelA-3 <blockquote>
+<p>双砍*
+感觉很少有双砍能发挥关键作用的局</p>
+</blockquote>
+</li>
+<li>LevelA-3.5 <blockquote>
+<p>过来，缴械，亮剑，反弹
+设计一关，玩家在面对众多追兵的关卡，追兵初始0资源2血，玩家3血0资源，只要有三个及以上的追兵，这关玩家的过来收益就很高</p>
+</blockquote>
+</li>
+<li>
+<p>LevelA-4 治安官boss</p>
+<blockquote>
+<p>RPG<em>,双RPG</em>
+在双线的设定下，这一关在解锁光剑光刀之后会好打很多，非常合理！尽快把双线的逻辑做出来</p>
+</blockquote>
+</li>
+<li>
+<p>LevelB-1</p>
+<blockquote>
+<p>激光炮
+不需要给一关让玩家学习激光炮用法，这么超模的东西玩家每关都会试图去用</p>
+</blockquote>
+</li>
+<li>LevelB-2 光剑光枪光刀使实战，<blockquote>
+<p>其实建议这关打不过三次直接解锁棱镜（比飞镜那关解锁棱镜合理一些）</p>
+</blockquote>
+</li>
+<li>LevelB-2.5 <blockquote>
+<p>建议这里出一关6剑2子弹vs5命0资源的不平衡对战，剧情方面，就是杀出重围受了重伤的你遇到了追兵/土匪
+玩家熟悉刚刚解锁的光类武器</p>
+</blockquote>
+</li>
+<li>LevelB-2.67 <blockquote>
+<p>建议这一关出一个刀战。让玩家对光剑光刀鬼斩等的操作更加熟悉。刀战可以是各自为战，也可以是打玩家</p>
+</blockquote>
+</li>
+<li>
+<p>LevelB-3 飞镜</p>
+<blockquote>
+<p>同理，这关解锁了RPG会好打很多</p>
+</blockquote>
+</li>
+<li>
+<p>LevelC-1 </p>
+<blockquote>
+<p>和平，解锁和平，这一关的人机我会加入个性</p>
+</blockquote>
+</li>
+<li>发育人机，一直除了补子弹，就是挡，等到关键时刻一个和平或者激光炮秒掉玩家</li>
+<li>好战人机，开局拔剑，之后补给和攻击交替，并且进攻玩家的概率提升，不断骚扰玩家</li>
+<li>欠打人机，没事干的时候，对全场挑衅的概率为40%，挑衅之后下回合会防御，使用过来的概率为20%，并且该人机在使用过来之后会使用攻击行动</li>
+<li>正常人机，攻击玩家的概率略微提升</li>
+<li>
+<p>整活人机，行动逻辑为有一把剑之后会朝天刺，有两发子弹后会朝天炮。</p>
+</li>
+<li>
+<p>LevelC-2 三头犬</p>
+<blockquote>
+<p>为了简化，我把三头犬制作成了Monkey+超级兵，如果有时间会进行优化的
+建议这一关玩家可以双拔双补，不然资源劣势过于严重，玩家体验也蛮差的</p>
+</blockquote>
+</li>
+<li>
+<p>Level？</p>
+<blockquote>
+<p>设计一关，强制让玩家起防，目前攻击反弹其他类行动都有归处，防御类行动出场率太低了</p>
+</blockquote>
+</li>
+<li>
+<p>以上这些是我认为有必要的关卡，除此之外，还可以设计一些重复关卡，让玩家熟悉操作的；一些长关卡，比如玩家血和人机血都很多；一些设定上很有意思的关卡等等</p>
+</li>
+<li>我觉得玩家的游戏体验、难度、关卡数量、关卡长度等等，可以向pvz or 杀戮尖塔看齐。它们的反馈曲线非常合理。</li>
+</ul>
+<h3 id="_9">爬塔模式</h3>
+<p>pve，一个roguelike爬塔类游戏的</p>
+<h4 id="_10">我期望拥有的要素</h4>
+<p>0.玩家属性值继承，资源每次战斗清零，但生命值顺延，玩家回血的手段有限，必须精打细算每一次战斗，但也不太可能满血被干趴下
+1.怪物和奖励交替出现，奖励应该以对玩家自身能力的加强，辅助以给予一次性用品
+2.可以加入金钱系统，经验系统等等累积价值类的，考验玩家运营能力
+3.boss战，精英战
+4.可以有英雄，但不要太多，在这里面英雄就和某一流派、打法绑定就好，如果是纯数值型的英雄可以再后期补强时给到，没太大意义
+5.对人机的设计，人机可以有鲜明的个性，玩家可以在游玩时慢慢熟悉，可以把一部分教程里的人机用过来</p>
+<h4 id="_11">设计的难点</h4>
+<ul>
+<li>如何把控随机性？<blockquote>
+<p>0.pve的特点使其没办法像pvp一样，称完全随机为心理博弈，Roguelite又使得过多的随机性会极大地影响玩家体验
+1.既然设计Roguelite了，就一定要避免让玩家感觉，某一关输的很无力，赢的很莫名其妙。最好让战损在玩家的一定把控之内
+2.如何避免玩家SL刷最优战绩
+3.是否应该透露敌人意图，应该透多少
+4.若玩家认为某次行动负收益过大，应该给予其悔棋的机会，但是这个机会不能通过SL获得，应该有限机会的消耗品
+5.失败之后是重来本关，读取存档点，还是从零开始？
+6.回合外的成长？好吗？本质是要求玩家时间换强度。
+可以有一些！但不要有质量上的改变，有心理安慰上的作用即可。
+7.提高最优解的可见度，拉宽高玩和低玩的差距
+最后,对于随机性的问题，我认为想不清楚的问题可以先放着，等我们设计好整体思路和框架之后自己做出来玩玩感受一下可能会更清楚</p>
+</blockquote>
+</li>
+<li>另一个思路：放纵随机性？加强游戏的娱乐成分？<blockquote>
+<p>加强随机性的话，就需要降低一些些沉没成本，让玩家在每次过回合和杀小怪都可以获得好感</p>
+</blockquote>
+</li>
+<li>构建流派<blockquote>
+<p>希望通过对游戏奖励的选择，让玩家并不仅仅是获得数值上的提升，而且在思考选择奖励的同时也可以通过合理的运营构建自己的打法和流派。
+避免玩家因累积效应过于超模，玩家的技能搭配应该不存在明显的最优解，各个技能最好平衡</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="_12">无尽模式</h3>
+<p>pve
+精髓在于时间控制强度，像pvz那样一波未平一波又起，玩家只有解决敌人的速度够快才能避免陷入重围
+玩家可以获得一些增益和一次性用品，问题是获取方式是以战养战，还是开发一套独立于战斗外的经济系统？</p>
+<h3 id="_13">杂想</h3>
+<h4 id="_14">英雄小队模式</h4>
+<p>pvp，在单个英雄方差太大的情况下（例如遇到克制的，或者被激光炮秒了之类），可以做英雄小队来降低随机性提高策略性，不过这个不是特别重要</p>
+<h4 id="_15">背景故事</h4>
+<p>我觉得我们需要拥有一个比较宏大的世界观x，不过这是次要的，可玩性和平衡性才是最重要的</p>
+<h4 id="_16">融合三国杀的身份战</h4>
+<p>pvp，在英雄模式的基础上，这个可以作为对个人战、团队战的补充玩法</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../%E5%AF%B9%E7%85%A7%E8%A1%A8/" class="btn btn-neutral float-left" title="对照表"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../%E5%AF%B9%E7%85%A7%E8%A1%A8/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
