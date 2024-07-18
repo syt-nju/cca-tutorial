@@ -8,7 +8,7 @@
     <title>简明规则体系 - CCA Tutorial</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
       <script>
         // Current page data
@@ -17,11 +17,12 @@
         var mkdocs_page_url = null;
       </script>
     
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
     <!--[if lt IE 9]>
       <script src="../js/html5shiv.min.js"></script>
     <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-      <script>hljs.highlightAll();</script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -33,7 +34,7 @@
           <a href=".." class="icon icon-home"> CCA Tutorial
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -47,19 +48,13 @@
               <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" href="../%E7%AE%80%E4%BB%8B/">简介</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">简明规则体系</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">简明规则体系</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#_1">行动</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#_2">（一）补给</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#_3">（二）攻击</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#_4">以下消耗都是剑的攻击</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#_5">以下消耗都是子弹的攻击</a>
-    </li>
-        </ul>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#_6">（三）防御</a>
     </li>
@@ -105,9 +100,9 @@
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">To Newcomers</li>
-      <li class="breadcrumb-item active">简明规则体系</li>
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>To Newcomers &raquo;</li>
+      <li>简明规则体系</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -116,15 +111,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="cca-script">CCA解释-Script</h1>
+                <h1 id="cca-script">CCA解释-Script<a class="headerlink" href="#cca-script" title="Permanent link">&para;</a></h1>
 <p>@author: dgz</p>
-<h2 id="_1">行动</h2>
+<h2 id="_1">行动<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>行动分为五类：补给、攻击、防御、反弹和其他
 所有行动的使用时机均为行动阶段
 一个行动可以有多个目标，但玩家使用行动时一般只能指定一名目标</p>
 </blockquote>
-<h4 id="_2"><strong>（一）补给</strong></h4>
+<h4 id="_2"><strong>（一）补给</strong><a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
 <ul>
 <li>补 charge a bullet<blockquote>
 <p>+1子弹</p>
@@ -143,8 +138,8 @@
 </blockquote>
 </li>
 </ul>
-<h4 id="_3"><strong>（二）攻击</strong></h4>
-<h5 id="_4">以下消耗都是剑的攻击</h5>
+<h4 id="_3"><strong>（二）攻击</strong><a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<h5 id="_4">以下消耗都是剑的攻击<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h5>
 <ul>
 <li>刺 stab<blockquote>
 <p>消耗：1   <br />
@@ -203,7 +198,7 @@
 </blockquote>
 </li>
 </ul>
-<h5 id="_5">以下消耗都是子弹的攻击</h5>
+<h5 id="_5">以下消耗都是子弹的攻击<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h5>
 <ul>
 <li>激光炮 Laser cannon<blockquote>
 <p>消耗：(X-1)，其中X为目标的生命值   <br />
@@ -262,7 +257,7 @@
 </blockquote>
 </li>
 </ul>
-<h4 id="_6"><strong>（三）防御</strong></h4>
+<h4 id="_6"><strong>（三）防御</strong><a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
 <p><em>[注1]防御类行动消耗均为0、均无目标且均始终生效</em>
 * 挡 block</p>
 <blockquote>
@@ -274,7 +269,7 @@
 * 巨盾 giant shield
 挡住：“激光炮”“双砍”“鬼斩”“箭尾斩”</p>
 </blockquote>
-<h4 id="_7"><strong>（四）反弹</strong></h4>
+<h4 id="_7"><strong>（四）反弹</strong><a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
 <p><em>[注]反弹类行动均无目标且均始终生效</em>
 * 弹 rebounce</p>
 <blockquote>
@@ -291,7 +286,7 @@
 消耗：剑3
      反弹：“激光炮”“光剑”“光刀”“激光枪”</p>
 </blockquote>
-<h4 id="_8"><strong>（五）其他</strong></h4>
+<h4 id="_8"><strong>（五）其他</strong><a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
 <ul>
 <li>过来 come on<blockquote>
 <p>吸收所有补给，但也吸收所有攻击</p>
@@ -337,15 +332,14 @@
     
   </span>
 </div>
-    <script src="../js/jquery-3.6.0.min.js"></script>
-    <script>var base_url = "..";</script>
-    <script src="../js/theme_extra.js"></script>
-    <script src="../js/theme.js"></script>
-      <script src="../search/main.js"></script>
-    <script>
-        jQuery(function () {
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
             SphinxRtdTheme.Navigation.enable(true);
-        });
+        };
     </script>
 
 </body>

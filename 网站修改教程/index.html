@@ -8,7 +8,7 @@
     <title>网站修改教程 - CCA Tutorial</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
       <script>
         // Current page data
@@ -17,11 +17,12 @@
         var mkdocs_page_url = null;
       </script>
     
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
     <!--[if lt IE 9]>
       <script src="../js/html5shiv.min.js"></script>
     <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-      <script>hljs.highlightAll();</script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -33,7 +34,7 @@
           <a href=".." class="icon icon-home"> CCA Tutorial
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -52,49 +53,17 @@
               </ul>
               <p class="caption"><span class="caption-text">Tutorial</span></p>
               <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">网站修改教程</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">网站修改教程</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#_2">第一次使用</a>
+    <li class="toctree-l2"><a class="reference internal" href="#_2">本地构建</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_3">贡献内容</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#_3">环境要求</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#git">git</a>
+    <li class="toctree-l3"><a class="reference internal" href="#_4">网站结构</a>
     </li>
-    <li class="toctree-l4"><a class="reference internal" href="#mkdocs">mkdocs</a>
+    <li class="toctree-l3"><a class="reference internal" href="#_5">贡献守则</a>
     </li>
-    <li class="toctree-l4"><a class="reference internal" href="#markdown">markdown</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#github">github</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#clone">clone</a>
-    </li>
-        </ul>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#_4">修改教程</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#_5">项目内容</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#docs">docs</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#mkdocs_1">mkdocs</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#_6">需要掌握的指令</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#_7">具体流程</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#pull">pull</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#_8">修改和编译</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#push">push</a>
-    </li>
-        </ul>
+    <li class="toctree-l3"><a class="reference internal" href="#_6">贡献方式</a>
     </li>
         </ul>
     </li>
@@ -129,9 +98,9 @@
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">Tutorial</li>
-      <li class="breadcrumb-item active">网站修改教程</li>
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Tutorial &raquo;</li>
+      <li>网站修改教程</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -140,58 +109,69 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="_1">怎样修改网站内容</h1>
-<h2 id="_2">第一次使用</h2>
-<h3 id="_3">环境要求</h3>
-<h4 id="git">git</h4>
-<h4 id="mkdocs">mkdocs</h4>
-<blockquote>
-<p>pip install mkdocs</p>
-</blockquote>
-<h4 id="markdown">markdown</h4>
-<p>注意，如果编辑的是markdown文件，不管是什么编辑器，请配置好图床，否则图片将无法上传到git</p>
-<h3 id="github">github</h3>
-<p>拥有github账号并且掌握git基本操作</p>
-<p>将自己的git账号发给syt，获得仓库权限</p>
-<h4 id="clone">clone</h4>
-<p>仓库网址：<a href="https://github.com/syt-nju/cca-tutorial">syt-nju/cca-tutorial (github.com)</a></p>
-<h2 id="_4">修改教程</h2>
-<h3 id="_5">项目内容</h3>
-<p>只需关注docs文件夹下的内容和mkdocs.yml文件</p>
-<h4 id="docs">docs</h4>
-<p>网站上所有的内容，主要以markdown或者html文件的形式存在</p>
-<h4 id="mkdocs_1">mkdocs</h4>
-<p>配置文档，如果添加或删除内容，请参考nav：下的内容</p>
-<blockquote>
-<p>site_name: CCA Tutorial
-nav: 
- - Home: index.md<br />
- - Tutorial:<br />
-   - 如何添加英雄: 简单英雄构建流程.md
- - 英雄技能:  CCA英雄.md
- - 测试需求: 测试需求.md
-theme: readthedocs</p>
-</blockquote>
-<h3 id="_6">需要掌握的指令</h3>
-<blockquote>
-<p>mkdocs serve</p>
-</blockquote>
-<p>在cca-tutorial文件夹下执行，把本地修改好的东西编译，生成一个本地端口，便于检查修改后的效果</p>
+                <h1 id="_1">怎样修改网站内容<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>如果你想要为本网站进行修改贡献，以下是一些指南。</p>
+<h2 id="_2">本地构建<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ol>
+<li>克隆本项目 repo</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git clone git@github.com:syt-nju/cca-tutorial.git
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>cd cca-tutorial
+</code></pre></div>
+<ol start="2">
+<li>安装依赖(请确保拥有 python 环境)</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pip install mkdocs
+</code></pre></div>
+<ol start="3">
+<li>启动 mkdocs 本地服务</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>mkdocs serve
+</code></pre></div>
+<p>之后即可通过浏览器访问 127.0.0.1:8000 预览网站。
+在 cca-tutorial 文件夹下执行，把本地修改好的东西编译，生成一个本地端口，便于检查修改后的效果</p>
 <p><img alt="image-20240715223706771" src="https://typorasyt.oss-cn-nanjing.aliyuncs.com/202407152237817.png" /></p>
-<p>将这个127.0.0.1:8000  网址用浏览器打开即可查看修改后的网站效果</p>
-<blockquote>
-<p>mkdocs gh-deploy</p>
-</blockquote>
-<p>本地编译后对网站进行修改</p>
-<p>还有git相关指令不再赘述</p>
-<h3 id="_7">具体流程</h3>
-<h4 id="pull">pull</h4>
-<p>同步别人对docs的修改</p>
-<h4 id="_8">修改和编译</h4>
-<p>修改你想修改的文件，注意维护nav</p>
-<p>本地mkdocs serve查看效果，满意后mkdocs gh-deploy</p>
-<h4 id="push">push</h4>
-<p>add commit push小连招，将修改的docs内容上传</p>
+<p>将这个 127.0.0.1:8000 网址用浏览器打开即可查看修改后的网站效果</p>
+<ol start="4">
+<li>本地编译后对网站进行修改</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>mkdocs gh-deploy
+</code></pre></div>
+<h2 id="_3">贡献内容<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="_4">网站结构<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>在源代码层面，使用 markdown 编写，文件夹内 <code>index.md</code> 为主页，文件夹内可以存放图片素材等。整体结构在 <code>mkdocs.yml</code> 文件中的 <code>nav</code> 部分定义。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>├── docs                # 网站上所有的内容，主要以 markdown 或者 html 文件的形式存在
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>|   |—— index.md        # 主页
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>|   |—— img/            # 图片
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>├── mkdocs.yml          # mkdocs 站点设置
+</code></pre></div>
+<h3 id="_5">贡献守则<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>你可以对本网站进行任何贡献，包括完善、更新页面内容，添加新页面，样式修改等等。只需关注 docs 文件夹以及 <code>mkdocs.yml</code> 文件。</p>
+<p>添加新页面请记得更新 <code>mkdocs.yml</code> 的 <code>nav</code> 部分。以下是参考样式内容：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>site_name: CCA Tutorial
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>nav: 
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>  - Home: index.md  
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>  - To Newcomers: 
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    - 简介: 简介.md
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>  - Tutorial:  
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    - 网站修改教程: 网站修改教程.md
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    - 如何添加英雄: 简单英雄构建流程.md
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>  - Infos: 
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>    - 英雄文档: CCA英雄.md
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>theme: readthedocs
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>请尽量规范编写 markdown, 避免出现格式错误，你可以通过在本地构建预览来确保正确性。</p>
+</div>
+<h3 id="_6">贡献方式<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li>将自己的 git 账号发给 syt ，获得<a href="https://github.com/syt-nju/cca-tutorial">仓库</a>权限。</li>
+<li>将仓库 clone 到本地，首先执行 <code>git pull</code> 同步别人的修改。</li>
+<li>修改你想修改的文件，注意维护 nav。</li>
+<li>本地 <code>mkdocs serve</code> 查看效果，确认无误后 <code>mkdocs gh-deploy</code>。</li>
+<li><code>git add</code>, <code>commit</code>, <code>push</code> 将本地修改同步到远程仓库。</li>
+</ul>
               
             </div>
           </div><footer>
@@ -227,15 +207,14 @@ theme: readthedocs</p>
     
   </span>
 </div>
-    <script src="../js/jquery-3.6.0.min.js"></script>
-    <script>var base_url = "..";</script>
-    <script src="../js/theme_extra.js"></script>
-    <script src="../js/theme.js"></script>
-      <script src="../search/main.js"></script>
-    <script>
-        jQuery(function () {
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
             SphinxRtdTheme.Navigation.enable(true);
-        });
+        };
     </script>
 
 </body>

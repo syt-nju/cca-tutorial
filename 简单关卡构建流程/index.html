@@ -8,7 +8,7 @@
     <title>如何设计关卡 - CCA Tutorial</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
       <script>
         // Current page data
@@ -17,11 +17,12 @@
         var mkdocs_page_url = null;
       </script>
     
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
     <!--[if lt IE 9]>
       <script src="../js/html5shiv.min.js"></script>
     <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-      <script>hljs.highlightAll();</script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -33,7 +34,7 @@
           <a href=".." class="icon icon-home"> CCA Tutorial
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -56,7 +57,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../%E7%AE%80%E5%8D%95%E8%8B%B1%E9%9B%84%E6%9E%84%E5%BB%BA%E6%B5%81%E7%A8%8B/">如何添加英雄</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">如何设计关卡</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">如何设计关卡</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#_2">关卡存档</a>
     </li>
@@ -91,9 +92,9 @@
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">Tutorial</li>
-      <li class="breadcrumb-item active">如何设计关卡</li>
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Tutorial &raquo;</li>
+      <li>如何设计关卡</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -102,13 +103,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h2 id="_1">关卡构建流程</h2>
-<h3 id="_2">关卡存档</h3>
+                <h2 id="_1">关卡构建流程<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="_2">关卡存档<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <p>路径Assets/Levelfiles/LevelSavings/LevelSavings.md</p>
 <p>在这里面存储关于关卡现在关卡的信息.</p>
 <p>其中chapter，level，wave是关卡的不同层级信息，chapter自0开始，每个chapter的level自1开始，值得注意的是只有少数关卡有多个wave，默认情况下wave是0.</p>
 <p>关卡跳转的相关代码在LevelSavs.cs中.</p>
-<h3 id="_3">关卡配置文件的结构</h3>
+<h3 id="_3">关卡配置文件的结构<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <p><img alt="image-20240716214706478" src="https://typorahon.oss-cn-beijing.aliyuncs.com/image-20240716214706478.png" /></p>
 <p>前三个不影响关卡的整体架构.</p>
 <p>从HP到swordinCD是关卡初始时玩家们的四大属性值信息，注意这几个数组的长度和初始人数应该保持一致.</p>
@@ -118,7 +119,7 @@
 <p>robotKind是控制人机执行什么样的代码的，具体可见RobotLogic.cs，注意长度和初始人数-1保持一致，注意命名和对照表保持严格一致.</p>
 <p>robotFigure是控制人机使用什么样的贴图的.</p>
 <p>Team是组队，单独一个人不需要给他组队，如上是1,2,4一队，3单独一队的情况.</p>
-<h3 id="_4">关卡配置文件存储路径</h3>
+<h3 id="_4">关卡配置文件存储路径<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p>Assets/LevelFiles/Tutorials中存储教程所有关卡，其子文件夹Dialog存储该教程关卡前的文字提示信息</p>
               
             </div>
@@ -155,15 +156,14 @@
     
   </span>
 </div>
-    <script src="../js/jquery-3.6.0.min.js"></script>
-    <script>var base_url = "..";</script>
-    <script src="../js/theme_extra.js"></script>
-    <script src="../js/theme.js"></script>
-      <script src="../search/main.js"></script>
-    <script>
-        jQuery(function () {
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
             SphinxRtdTheme.Navigation.enable(true);
-        });
+        };
     </script>
 
 </body>
