@@ -8,7 +8,7 @@
     <title>英雄文档 - CCA Tutorial</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
       <script>
         // Current page data
@@ -17,11 +17,12 @@
         var mkdocs_page_url = null;
       </script>
     
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
     <!--[if lt IE 9]>
       <script src="../js/html5shiv.min.js"></script>
     <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-      <script>hljs.highlightAll();</script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -33,7 +34,7 @@
           <a href=".." class="icon icon-home"> CCA Tutorial
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -61,7 +62,7 @@
               </ul>
               <p class="caption"><span class="caption-text">Infos</span></p>
               <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">英雄文档</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">英雄文档</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#_1">已回忆英雄</a>
         <ul>
@@ -213,7 +214,7 @@
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#40_2">猪八戒 40 *</a>
     </li>
-    <li class="toctree-l4"><a class="reference internal" href="#50">沙僧 50 *</a>
+    <li class="toctree-l4"><a class="reference internal" href="#50">沙僧  50 *</a>
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#120">白龙马 120</a>
     </li>
@@ -369,9 +370,9 @@
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">Infos</li>
-      <li class="breadcrumb-item active">英雄文档</li>
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Infos &raquo;</li>
+      <li>英雄文档</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -380,44 +381,44 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="cca">CCA英雄集合</h1>
-<h2 id="_1">已回忆英雄</h2>
+                <h1 id="cca">CCA英雄集合<a class="headerlink" href="#cca" title="Permanent link">&para;</a></h1>
+<h2 id="_1">已回忆英雄<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>这里保存几位CCA设计师的宝贵思想遗产，按设计师名字和系列分别书写各个英雄</p>
-<h3 id="hon">hon</h3>
-<h4 id="20">吕布 <code>20</code></h4>
+<h3 id="hon">hon<a class="headerlink" href="#hon" title="Permanent link">&para;</a></h3>
+<h4 id="20">吕布 <code>20</code><a class="headerlink" href="#20" title="Permanent link">&para;</a></h4>
 <ul>
 <li>无双
     &gt; <strong>锁定技</strong> 攻击力等级恒+0.5n，n为场上人数</li>
 </ul>
-<h4 id="40">华雄 <code>40</code></h4>
+<h4 id="40">华雄 <code>40</code><a class="headerlink" href="#40" title="Permanent link">&para;</a></h4>
 <ul>
 <li>耀武
     &gt; <strong>锁定技</strong> 对你造成伤害的玩家获得一发子弹</li>
 </ul>
-<h4 id="20_1">超级兵 <code>20</code></h4>
+<h4 id="20_1">超级兵 <code>20</code><a class="headerlink" href="#20_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>冲锋
     &gt; <strong>行动技</strong> 可以三拔，三补</li>
 </ul>
-<h4 id="15">貂蝉 <code>15</code></h4>
+<h4 id="15">貂蝉 <code>15</code><a class="headerlink" href="#15" title="Permanent link">&para;</a></h4>
 <ul>
 <li>离间
     &gt; <strong>行动技</strong> 消耗一发子弹，指定两位玩家，其中下回合没有对对方使用攻击行动者失去n!点体力,
     n为你发动此技能的次数</li>
 </ul>
-<h4 id="20_2">曹操 <code>20</code></h4>
+<h4 id="20_2">曹操 <code>20</code><a class="headerlink" href="#20_2" title="Permanent link">&para;</a></h4>
 <ul>
 <li>奸雄
     &gt; <strong>锁定技</strong> 受到攻击伤害时，获得此攻击所消耗的资源</li>
 </ul>
-<h4 id="15_1">张角 <code>15</code> *</h4>
+<h4 id="15_1">张角 <code>15</code> *<a class="headerlink" href="#15_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>雷击
     &gt; 你的防御或反弹行动生效后，你可以对一位玩家使用技能<em>雷击</em>：造成三点无来源伤害</li>
 <li>黄天
     &gt; <strong>锁定技</strong> 你获得所有无来源伤害的人头收益</li>
 </ul>
-<h4 id="40_1">李存勖 <code>40</code></h4>
+<h4 id="40_1">李存勖 <code>40</code><a class="headerlink" href="#40_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>三箭之誓
@@ -432,17 +433,17 @@
     &gt; <strong>锁定技</strong> 若你的血量为全场最高，则你每回合流失两点体力</p>
 </li>
 </ul>
-<h4 id="15_2">于吉 <code>15</code> *</h4>
+<h4 id="15_2">于吉 <code>15</code> *<a class="headerlink" href="#15_2" title="Permanent link">&para;</a></h4>
 <ul>
 <li>蛊惑
     &gt; 待设计</li>
 </ul>
-<h4 id="15_3">海盗 <code>15</code></h4>
+<h4 id="15_3">海盗 <code>15</code><a class="headerlink" href="#15_3" title="Permanent link">&para;</a></h4>
 <ul>
 <li>火药桶
     &gt; <strong>行动技</strong> 补给，获得5发子弹</li>
 </ul>
-<h4 id="20_3">盾山 <code>20</code></h4>
+<h4 id="20_3">盾山 <code>20</code><a class="headerlink" href="#20_3" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>天地化盾
@@ -453,7 +454,7 @@
     &gt; 你一回合可以同时进行n个防御或n个反弹，n为你<code>化盾</code>标记数</p>
 </li>
 </ul>
-<h4 id="6">僵尸 <code>6</code></h4>
+<h4 id="6">僵尸 <code>6</code><a class="headerlink" href="#6" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>不死
@@ -464,7 +465,7 @@
     &gt; 你可以对自己进行攻击</p>
 </li>
 </ul>
-<h4 id="18">光滑墙面 <code>18</code> *</h4>
+<h4 id="18">光滑墙面 <code>18</code> *<a class="headerlink" href="#18" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>完全弹性碰撞
@@ -475,7 +476,7 @@
     &gt; 你的反弹伤害翻3倍作用在攻击者身上</p>
 </li>
 </ul>
-<h4 id="18_1">粗糙墙面 <code>18</code> *</h4>
+<h4 id="18_1">粗糙墙面 <code>18</code> *<a class="headerlink" href="#18_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>完全非弹性碰撞
@@ -486,7 +487,7 @@
     &gt; 当你的反弹行动生效时，其伤害作用于全场所有玩家</p>
 </li>
 </ul>
-<h4 id="20_4">汤姆 <code>20</code></h4>
+<h4 id="20_4">汤姆 <code>20</code><a class="headerlink" href="#20_4" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>捕鼠能手
@@ -509,14 +510,14 @@
     &gt; <strong>锁定</strong> 当有一位玩家被放飞时，你获得其人头收益并回复四点体力</p>
 </li>
 </ul>
-<h4 id="18_2">剑客 <code>18</code></h4>
+<h4 id="18_2">剑客 <code>18</code><a class="headerlink" href="#18_2" title="Permanent link">&para;</a></h4>
 <ul>
 <li>连斩
     &gt; <strong>锁定</strong> 当你刀剑攻击首次命中一位玩家时，你下回合获得无双
     &gt; <strong>主动</strong> 当你刀剑攻击连续二次命中一位玩家时，你可以令对手眩晕，你所有剑进入可用状态，并且下回合获得<strong>连刺</strong>，且所有刺、砍、鬼斩均只需消耗一把剑
     &gt; 当你的刀剑攻击连续三次命中一位玩家时，统计次数清零</li>
 </ul>
-<h4 id="12">大剑师 <code>12</code></h4>
+<h4 id="12">大剑师 <code>12</code><a class="headerlink" href="#12" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>神速
@@ -531,7 +532,7 @@
     &gt; 同<strong>剑客</strong></p>
 </li>
 </ul>
-<h4 id="18_3">牛仔 <code>18</code></h4>
+<h4 id="18_3">牛仔 <code>18</code><a class="headerlink" href="#18_3" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>双枪
@@ -542,38 +543,38 @@
     &gt; 你的子弹消耗之后，不会消失，而是像剑那样进入CD</p>
 </li>
 </ul>
-<h4 id="6_1">马索尔 <code>6</code></h4>
+<h4 id="6_1">马索尔 <code>6</code><a class="headerlink" href="#6_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>铁血
     &gt; <strong>主动</strong> 当你生命力&lt;=0时，本回合回合结束阶段死亡结算前，你可以发动该技能进入<strong>铁血</strong>状态，该状态下你获得<strong>无双</strong>和<strong>猴子的技能</strong>，若你在三回合内造成总计大于等于10点伤害，则你满血复活，否则你死亡</li>
 </ul>
-<h4 id="15_4">班纳 <code>15</code></h4>
+<h4 id="15_4">班纳 <code>15</code><a class="headerlink" href="#15_4" title="Permanent link">&para;</a></h4>
 <ul>
 <li>暴怒
     &gt; 当你体力值小于等于5时，你进入<code>暴怒状态</code>，获得5回合伤害*4，霸体和锁血，5回合后你死亡。</li>
 </ul>
-<h3 id="kyh">kyh</h3>
-<h4 id="12_1">猴子 <code>12</code> *</h4>
+<h3 id="kyh">kyh<a class="headerlink" href="#kyh" title="Permanent link">&para;</a></h3>
+<h4 id="12_1">猴子 <code>12</code> *<a class="headerlink" href="#12_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>技能名（待定）
     &gt; 伤害翻3倍</li>
 </ul>
-<h4 id="15_5">后羿 <code>15</code></h4>
+<h4 id="15_5">后羿 <code>15</code><a class="headerlink" href="#15_5" title="Permanent link">&para;</a></h4>
 <ul>
 <li>射日
     &gt; <strong>行动技</strong> 消耗两发子弹，攻击力为4.5，造成三点伤害和眩晕，挡可以防止眩晕但不能防止伤害，可以被反弹</li>
 </ul>
-<h4 id="15_6">扁鹊 <code>15</code> *</h4>
+<h4 id="15_6">扁鹊 <code>15</code> *<a class="headerlink" href="#15_6" title="Permanent link">&para;</a></h4>
 <ul>
 <li>下毒
     &gt; 当你对一个角色造成n点伤害时，你可以选择发动该技能使其进入<strong>中毒</strong>状态，持续之后的两回合，每回合失去n点体力，（此处待商榷），若角色在<strong>中毒</strong>状态中死亡，则你获得其人头收益</li>
 </ul>
-<h4 id="20_5">张飞（旧） <code>20</code></h4>
+<h4 id="20_5">张飞（旧） <code>20</code><a class="headerlink" href="#20_5" title="Permanent link">&para;</a></h4>
 <ul>
 <li>咆哮
     &gt; <strong>行动技</strong> 在回合内，你可以发动该技能使自己进入三回合的免伤状态，每局游戏限三次</li>
 </ul>
-<h4 id="30">亚瑟 <code>30</code> *</h4>
+<h4 id="30">亚瑟 <code>30</code> *<a class="headerlink" href="#30" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>圣剑
@@ -584,43 +585,43 @@
     &gt; <strong>行动技</strong> 消耗20把剑，效果等同于核弹，不能被普通反弹反弹，但可以被镜面反射。</p>
 </li>
 </ul>
-<h4 id="15_7">妲己 <code>15</code> *</h4>
+<h4 id="15_7">妲己 <code>15</code> *<a class="headerlink" href="#15_7" title="Permanent link">&para;</a></h4>
 <ul>
 <li>技能
     &gt; 当你的攻击生效时，你可以对目标角色造成眩晕</li>
 </ul>
-<h4 id="15_8">典韦 <code>15</code> *</h4>
+<h4 id="15_8">典韦 <code>15</code> *<a class="headerlink" href="#15_8" title="Permanent link">&para;</a></h4>
 <ul>
 <li>技能
     &gt; 你一回合可以行动两次</li>
 </ul>
-<h4 id="20_6">钟馗 <code>20</code> *</h4>
+<h4 id="20_6">钟馗 <code>20</code> *<a class="headerlink" href="#20_6" title="Permanent link">&para;</a></h4>
 <ul>
 <li>技能
     &gt; <strong>被动</strong> 当你即将进行死亡结算时，你可以对一位玩家使用造成10点伤害，3点溅射伤害的“大核弹”</li>
 </ul>
-<h4 id="15_9">诸葛亮 <code>15</code> *</h4>
+<h4 id="15_9">诸葛亮 <code>15</code> *<a class="headerlink" href="#15_9" title="Permanent link">&para;</a></h4>
 <ul>
 <li>连弩
     &gt; 你每造成一此伤害，你获得一个<strong>连弩</strong>标记，你的伤害翻（n%5+1）倍，n为你总共的标记数</li>
 </ul>
-<h4 id="20_7">程咬金 <code>20</code> *</h4>
+<h4 id="20_7">程咬金 <code>20</code> *<a class="headerlink" href="#20_7" title="Permanent link">&para;</a></h4>
 <ul>
 <li>技能
     &gt; <strong>锁定技</strong> 当你生命值&lt;=10时，你伤害 <em>2，当生命值&lt;=5时，你伤害再 </em>2</li>
 </ul>
-<h4 id="12_2">小鲁班 <code>12</code> *</h4>
+<h4 id="12_2">小鲁班 <code>12</code> *<a class="headerlink" href="#12_2" title="Permanent link">&para;</a></h4>
 <ul>
 <li>机枪
     &gt; <strong>行动技</strong> 消耗n发子弹，你可以对n个人使用该行动，效果相当于造成2n点伤害的给枪</li>
 </ul>
-<h3 id="lmh">lmh</h3>
-<h4 id="15_10">嬴政 <code>15</code></h4>
+<h3 id="lmh">lmh<a class="headerlink" href="#lmh" title="Permanent link">&para;</a></h3>
+<h4 id="15_10">嬴政 <code>15</code><a class="headerlink" href="#15_10" title="Permanent link">&para;</a></h4>
 <ul>
 <li>御剑
     &gt; <strong>锁定技</strong> 当你拔剑对自己生效时，可以额外获得8把剑。</li>
 </ul>
-<h4 id="12_3">李儒 <code>12</code></h4>
+<h4 id="12_3">李儒 <code>12</code><a class="headerlink" href="#12_3" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>焚城
@@ -631,27 +632,27 @@
     &gt;<strong>锁定技</strong>攻击你但未对你造成伤害的角色将眩晕一回合。</p>
 </li>
 </ul>
-<h4 id="20_8">庄周<code>20</code></h4>
+<h4 id="20_8">庄周<code>20</code><a class="headerlink" href="#20_8" title="Permanent link">&para;</a></h4>
 <ul>
 <li>逍遥
     &gt; <strong>锁定技</strong> 你无法成为其他角色技能的作用对象，你攻击和被攻击时无视对方的技能效果。</li>
 </ul>
-<h4 id="15_11">周瑜 <code>15</code></h4>
+<h4 id="15_11">周瑜 <code>15</code><a class="headerlink" href="#15_11" title="Permanent link">&para;</a></h4>
 <ul>
 <li>反间
     &gt; 回合开始阶段，你可以对一名角色发动技能，若下一回合你未对其进行攻击且其未对你造成伤害，则你对其造成n+1点伤害并增加一个标记（n为标记数且最多为5）</li>
 </ul>
-<h4 id="15_12">小乔 <code>15</code></h4>
+<h4 id="15_12">小乔 <code>15</code><a class="headerlink" href="#15_12" title="Permanent link">&para;</a></h4>
 <ul>
 <li>天香
     &gt; <strong>主动</strong> 你可以将本回合受到的所有伤害转移给一名其他角色并令其选择一项：1.其眩晕一轮 2.你获得n发子弹（n为转移的伤害数）。若你发动此技能的回合未受到伤害，则你下回合眩晕。</li>
 </ul>
-<h4 id="15_13">兰陵王 <code>15</code></h4>
+<h4 id="15_13">兰陵王 <code>15</code><a class="headerlink" href="#15_13" title="Permanent link">&para;</a></h4>
 <ul>
 <li>入阵 
     &gt;若你持续4回合未攻击，则你进入如下状态：1.伤害+6，2.受伤-1，3.攻击力+2.5</li>
 </ul>
-<h4 id="15_14">马超 <code>15</code></h4>
+<h4 id="15_14">马超 <code>15</code><a class="headerlink" href="#15_14" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>铁骑
@@ -662,7 +663,7 @@
     &gt;你对上回合对你造成过伤害的角色发动<strong>铁骑</strong>无需失去体力</p>
 </li>
 </ul>
-<h4 id="15_15">姜维 <code>15</code></h4>
+<h4 id="15_15">姜维 <code>15</code><a class="headerlink" href="#15_15" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>斗阵
@@ -673,7 +674,7 @@
     &gt; <strong>限定技</strong>，回合开始时，你可以将任意个资源交给一名其他角色，此后你与其造成的伤害+n，受到其他角色的伤害+n（n为你交给其的资源总数）</p>
 </li>
 </ul>
-<h4 id="15_16">李淳风 <code>15</code></h4>
+<h4 id="15_16">李淳风 <code>15</code><a class="headerlink" href="#15_16" title="Permanent link">&para;</a></h4>
 <p><em>你能且仅能使用以下行动</em></p>
 <ul>
 <li>
@@ -705,7 +706,7 @@
     &gt;若4回合内全场其他角色的体力值未发生变化，则你死亡</p>
 </li>
 </ul>
-<h4 id="3">吉尔伽美什 <code>3</code></h4>
+<h4 id="3">吉尔伽美什 <code>3</code><a class="headerlink" href="#3" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>王之财宝
@@ -716,17 +717,17 @@
     &gt;你第一回合无法攻击，你无法受到负面效果控制，挑衅对你无效，且你无视本回合受到你伤害的角色对你造成的伤害。</p>
 </li>
 </ul>
-<h4 id="18_4">高文 <code>18</code></h4>
+<h4 id="18_4">高文 <code>18</code><a class="headerlink" href="#18_4" title="Permanent link">&para;</a></h4>
 <ul>
 <li>太阳骑士
     &gt;<strong>锁定技</strong> 若场上有半数以上角色未在攻击，则你伤害*3且受伤/3（向上取整）</li>
 </ul>
-<h4 id="15_17">黑无常 <code>15</code></h4>
+<h4 id="15_17">黑无常 <code>15</code><a class="headerlink" href="#15_17" title="Permanent link">&para;</a></h4>
 <ul>
 <li>尸毒 
     &gt;当你对一名没有“尸毒”标记的其他角色造成伤害时你可令其获得一个标记，当拥有“尸毒”标记的角色攻击你且未对你造成伤害时你可令其获得一个标记，当拥有标记的角色对你造成伤害时其失去所有标记。回合结束时，你对拥有n个标记的角色造成n点伤害。</li>
 </ul>
-<h4 id="15_18">白无常 <code>15</code></h4>
+<h4 id="15_18">白无常 <code>15</code><a class="headerlink" href="#15_18" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>勾魂 
@@ -737,7 +738,7 @@
     &gt;当你对一名处于眩晕状态的角色造成伤害时你可进入“附身”状态。“附身”状态下每回合结束时你将你受到的所有伤害转移给该角色。当该角色对你造成伤害时可解除“附身”状态</p>
 </li>
 </ul>
-<h4 id="15_19">判官 <code>15</code></h4>
+<h4 id="15_19">判官 <code>15</code><a class="headerlink" href="#15_19" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>批状
@@ -748,7 +749,7 @@
     &gt;回合开始时，你可在一名角色与你皆同意的情况下令其此后三回合不受任何伤害且造成的伤害+1，三回合后你令其死亡。（若你上回合对其造成过伤害且其体力值不大于3，你可强制发动此技能）</p>
 </li>
 </ul>
-<h4 id="18_5">孟婆 <code>18</code></h4>
+<h4 id="18_5">孟婆 <code>18</code><a class="headerlink" href="#18_5" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>轮回
@@ -759,12 +760,12 @@
     &gt;你可令<strong>轮回</strong>的作用对象在技能发动后的第3回合开始造成与受到的伤害均+n（n至多为5）</p>
 </li>
 </ul>
-<h4 id="20_9">秦广王 <code>20</code></h4>
+<h4 id="20_9">秦广王 <code>20</code><a class="headerlink" href="#20_9" title="Permanent link">&para;</a></h4>
 <ul>
 <li>重甲 
     &gt;<strong>锁定技</strong> 其他角色攻击你消耗的资源翻倍。</li>
 </ul>
-<h4 id="15_20">袁天罡 <code>15</code></h4>
+<h4 id="15_20">袁天罡 <code>15</code><a class="headerlink" href="#15_20" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>天罡
@@ -775,7 +776,7 @@
     &gt;当你受到伤害时可重新分配标记效果</p>
 </li>
 </ul>
-<h4 id="18_6">兰斯洛特 <code>18</code></h4>
+<h4 id="18_6">兰斯洛特 <code>18</code><a class="headerlink" href="#18_6" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>长江骑士
@@ -786,7 +787,7 @@
     &gt;若一次攻击未对你生效，你将获得该攻击所消耗的资源</p>
 </li>
 </ul>
-<h4 id="15_21">莫德雷德 <code>15</code></h4>
+<h4 id="15_21">莫德雷德 <code>15</code><a class="headerlink" href="#15_21" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>王剑盗窃者
@@ -797,7 +798,7 @@
     &gt;当你对一名其他角色造成伤害时，你可以令其眩晕。若如此做，你将体力值降为1，下回合攻击力+2且对于眩晕的角色每次可造成n-1点伤害（n为其当前体力值）</p>
 </li>
 </ul>
-<h4 id="15_22">蜘蛛 <code>15</code></h4>
+<h4 id="15_22">蜘蛛 <code>15</code><a class="headerlink" href="#15_22" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>吐丝
@@ -812,7 +813,7 @@
     &gt;<strong>行动技</strong> 你可以消耗x个资源（x不大于5）回复等量体力，并获得x个【网】标记，且此后你伤害+1（可叠加），若你在产卵期间被攻击命中，则你死亡。</p>
 </li>
 </ul>
-<h4 id="15_23">花木兰 <code>15</code></h4>
+<h4 id="15_23">花木兰 <code>15</code><a class="headerlink" href="#15_23" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>愿为市鞍马
@@ -827,7 +828,7 @@
     &gt;征战状态下你可选定一名角色，在状态结束前所有以其为目标的攻击目标均改为你，且其不能对你造成伤害</p>
 </li>
 </ul>
-<h4 id="15_24">武则天 <code>15</code></h4>
+<h4 id="15_24">武则天 <code>15</code><a class="headerlink" href="#15_24" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>记怨
@@ -842,7 +843,7 @@
     &gt;当一名角色受到你的核弹造成的伤害时，你清空其所有标记并对其额外造成2^（n）点伤害。（n为其拥有的标记数）</p>
 </li>
 </ul>
-<h4 id="15_25">鬼谷子 <code>15</code></h4>
+<h4 id="15_25">鬼谷子 <code>15</code><a class="headerlink" href="#15_25" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>纵横捭阖 </p>
@@ -857,7 +858,7 @@
 </blockquote>
 </li>
 </ul>
-<h4 id="15_26">后卿 <code>15</code></h4>
+<h4 id="15_26">后卿 <code>15</code><a class="headerlink" href="#15_26" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>血如泉涌</p>
@@ -880,14 +881,14 @@
 当你造成伤害后可与目标互换体力值，若你的体力值因此降低，你获得等于你们体力值差值的护盾</p>
 </li>
 </ul>
-<h4 id="18_7">赢勾 <code>18</code></h4>
+<h4 id="18_7">赢勾 <code>18</code><a class="headerlink" href="#18_7" title="Permanent link">&para;</a></h4>
 <ul>
 <li>铁壁<blockquote>
 <p>你补子弹时不受子弹攻击伤害，拔剑时不受刀剑攻击伤害</p>
 </blockquote>
 </li>
 </ul>
-<h4 id="15_27">旱魃 <code>15</code></h4>
+<h4 id="15_27">旱魃 <code>15</code><a class="headerlink" href="#15_27" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>赤地千里</p>
@@ -902,7 +903,7 @@
 </blockquote>
 </li>
 </ul>
-<h4 id="_2">将臣：<code>?</code></h4>
+<h4 id="_2">将臣：<code>?</code><a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>幽魂</p>
@@ -917,22 +918,22 @@
 </blockquote>
 </li>
 </ul>
-<h4 id="_3">狼王</h4>
+<h4 id="_3">狼王<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
 <ul>
 <li>群狼 <blockquote>
 <p>回合开始时，若场上没有“狼”，你可以失去n点体力，召唤n只“狼”（n至多为5）。当你使用子弹攻击时，每只“狼”对相同目标也进行一次相同攻击。（“狼”无法受到伤害，在攻击受到“反弹”后“狼”消失）</p>
 </blockquote>
 </li>
 </ul>
-<h3 id="lel">lel</h3>
-<h4 id="15_28">李元霸 <code>15</code></h4>
+<h3 id="lel">lel<a class="headerlink" href="#lel" title="Permanent link">&para;</a></h3>
+<h4 id="15_28">李元霸 <code>15</code><a class="headerlink" href="#15_28" title="Permanent link">&para;</a></h4>
 <ul>
 <li>血怒<blockquote>
 <p><strong>主动技</strong> 回合开始阶段发动，失去三点体力，此后每回合失去一点体力，伤害*5，</p>
 </blockquote>
 </li>
 </ul>
-<h4 id="12_4">太乙真人 <code>12</code></h4>
+<h4 id="12_4">太乙真人 <code>12</code><a class="headerlink" href="#12_4" title="Permanent link">&para;</a></h4>
 <ul>
 <li>炼药<blockquote>
 <p>当你补给时，你获得一瓶灵药，可以被过来。在回合开始阶段，你可以使用一瓶灵药，获得两回合的对应灵药的效果，灵药不可叠加使用
@@ -945,19 +946,19 @@
 </blockquote>
 </li>
 </ul>
-<h3 id="phr">phr</h3>
-<h4 id="15_29">孙策 <code>15</code></h4>
+<h3 id="phr">phr<a class="headerlink" href="#phr" title="Permanent link">&para;</a></h3>
+<h4 id="15_29">孙策 <code>15</code><a class="headerlink" href="#15_29" title="Permanent link">&para;</a></h4>
 <ul>
 <li>激励<blockquote>
 <p>你每造成一次伤害，获得一发子弹，下回合伤害翻倍，可以叠加</p>
 </blockquote>
 </li>
 </ul>
-<h3 id="_4">西游系列</h3>
-<h4 id="_5">猴子</h4>
+<h3 id="_4">西游系列<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<h4 id="_5">猴子<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
 <p>被强行归类的冤种
 （以下记不清了，觉醒技随便写的）</p>
-<h4 id="40_2">猪八戒 <code>40</code> *</h4>
+<h4 id="40_2">猪八戒 <code>40</code> *<a class="headerlink" href="#40_2" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>如猪
@@ -968,7 +969,7 @@
     &gt; <strong>觉醒</strong> 当你资源数大于你的命数时，你获得<strong>猴子的技能</strong></p>
 </li>
 </ul>
-<h4 id="50">沙僧  <code>50</code> *</h4>
+<h4 id="50">沙僧  <code>50</code> *<a class="headerlink" href="#50" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>笨拙
@@ -979,7 +980,7 @@
     &gt; 想不起来了</p>
 </li>
 </ul>
-<h4 id="120">白龙马 <code>120</code></h4>
+<h4 id="120">白龙马 <code>120</code><a class="headerlink" href="#120" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>坐骑
@@ -990,63 +991,63 @@
     &gt; 想不起来了</p>
 </li>
 </ul>
-<h3 id="_6">刺猬家族</h3>
-<h4 id="20_10">刺猬 <code>20</code></h4>
+<h3 id="_6">刺猬家族<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<h4 id="20_10">刺猬 <code>20</code><a class="headerlink" href="#20_10" title="Permanent link">&para;</a></h4>
 <ul>
 <li>连刺
     &gt; <strong>锁定</strong> 你对一位玩家进行攻击行动时，同时对其进行n个该行动，n为耗尽此资源所需的最小数量
     &gt; 所有刺猬家族的成员都具有技能<strong>连刺</strong>，此后不再赘述</li>
 </ul>
-<h4 id="12_5">小刺猬 <code>12</code></h4>
+<h4 id="12_5">小刺猬 <code>12</code><a class="headerlink" href="#12_5" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>你的所有行动消耗/2，向上取整</p>
 </blockquote>
-<h4 id="25">大刺猬 <code>25</code></h4>
+<h4 id="25">大刺猬 <code>25</code><a class="headerlink" href="#25" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>你只能拔剑</p>
 </blockquote>
-<h4 id="10">光刺猬 <code>10</code></h4>
+<h4 id="10">光刺猬 <code>10</code><a class="headerlink" href="#10" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>你的光剑、光刀只需消耗一把剑，激光枪只需要消耗一发子弹</p>
 </blockquote>
-<h4 id="12_6">刺鲨 <code>12</code></h4>
+<h4 id="12_6">刺鲨 <code>12</code><a class="headerlink" href="#12_6" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>你拥有技能<strong>鲨鱼</strong></p>
 </blockquote>
-<h4 id="8">狄仁刺猬 <code>8</code></h4>
+<h4 id="8">狄仁刺猬 <code>8</code><a class="headerlink" href="#8" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>你拥有<strong>狄仁杰的技能</strong></p>
 </blockquote>
-<h4 id="8_1">嬴政刺猬 <code>8</code></h4>
+<h4 id="8_1">嬴政刺猬 <code>8</code><a class="headerlink" href="#8_1" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>你拥有<strong>十拔</strong></p>
 </blockquote>
-<h4 id="10_1">海盗刺猬 <code>10</code></h4>
+<h4 id="10_1">海盗刺猬 <code>10</code><a class="headerlink" href="#10_1" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>你拥有<strong>火药桶</strong></p>
 </blockquote>
-<h4 id="201">刺猬之父 <code>20/(在场刺猬+1),向上取整</code></h4>
+<h4 id="201">刺猬之父 <code>20/(在场刺猬+1),向上取整</code><a class="headerlink" href="#201" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>你拥有所有在场刺猬的技能</p>
 </blockquote>
-<h4 id="4">刺猬之母 <code>4</code></h4>
+<h4 id="4">刺猬之母 <code>4</code><a class="headerlink" href="#4" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>你拥有除刺猬之父外所有刺猬的技能</p>
 </blockquote>
-<h4 id="12_7">小猬兵 <code>12</code></h4>
+<h4 id="12_7">小猬兵 <code>12</code><a class="headerlink" href="#12_7" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>你的RPG仅需一发子弹，双RPG仅需两发子弹</p>
 </blockquote>
-<h4 id="10_2">大猬兵 <code>10</code></h4>
+<h4 id="10_2">大猬兵 <code>10</code><a class="headerlink" href="#10_2" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>你的核弹只需要两发子弹</p>
 </blockquote>
-<h4 id="35">豪猪 <code>35</code></h4>
+<h4 id="35">豪猪 <code>35</code><a class="headerlink" href="#35" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>你拥有猪八戒的技能</p>
 </blockquote>
-<h3 id="_7">鲨鱼家族</h3>
-<h4 id="20_11">鲨鱼 <code>20</code></h4>
+<h3 id="_7">鲨鱼家族<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<h4 id="20_11">鲨鱼 <code>20</code><a class="headerlink" href="#20_11" title="Permanent link">&para;</a></h4>
 <ul>
 <li>鲨鱼<blockquote>
 <p><strong>锁定技</strong> 你的剑数等于你的生命值，你不能补子弹
@@ -1054,40 +1055,40 @@
 </blockquote>
 </li>
 </ul>
-<h4 id="30_1">大白鲨 <code>30</code></h4>
+<h4 id="30_1">大白鲨 <code>30</code><a class="headerlink" href="#30_1" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>你受到子弹伤害*2</p>
 </blockquote>
-<h4 id="15_30">灰鲸鲨 <code>15</code></h4>
+<h4 id="15_30">灰鲸鲨 <code>15</code><a class="headerlink" href="#15_30" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>你受到子弹伤害/2，向上取整</p>
 </blockquote>
-<h4 id="12_8">刺鲨 <code>12</code></h4>
+<h4 id="12_8">刺鲨 <code>12</code><a class="headerlink" href="#12_8" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>用有刺猬的技能</p>
 </blockquote>
-<h4 id="15_31">剑齿鲨 <code>15</code></h4>
+<h4 id="15_31">剑齿鲨 <code>15</code><a class="headerlink" href="#15_31" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>拥有剑客的技能，且你第一回合不能攻击</p>
 </blockquote>
-<h4 id="15_32">虎鲨 <code>15</code></h4>
+<h4 id="15_32">虎鲨 <code>15</code><a class="headerlink" href="#15_32" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>拥有<code>无双</code></p>
 </blockquote>
-<h4 id="15_33">锤头鲨 <code>15</code></h4>
+<h4 id="15_33">锤头鲨 <code>15</code><a class="headerlink" href="#15_33" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>刀剑伤害+1</p>
 </blockquote>
-<h4 id="15_34">机械鲨 <code>15</code></h4>
+<h4 id="15_34">机械鲨 <code>15</code><a class="headerlink" href="#15_34" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>你不能使用剑，你的子弹数恒等于你的命数，你拥有技能<strong>枪法</strong></p>
 </blockquote>
-<h3 id="magic-world">Magic World</h3>
+<h3 id="magic-world">Magic World<a class="headerlink" href="#magic-world" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Magic System
     &gt; All wizards get one <code>magic power</code> when them take or make damage of any amount</li>
 </ul>
-<h4 id="lord-voldemort-15">Lord Voldemort <code>15</code></h4>
+<h4 id="lord-voldemort-15">Lord Voldemort <code>15</code><a class="headerlink" href="#lord-voldemort-15" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>Unforgivable Curses
@@ -1103,7 +1104,7 @@
     &gt; <strong>Active</strong> if you killer a player, you can create a Horcrux,when you are going to die, you can choose to destory a Horcrux and return to 5HP</p>
 </li>
 </ul>
-<h4 id="harry-potter-18">Harry Potter <code>18</code></h4>
+<h4 id="harry-potter-18">Harry Potter <code>18</code><a class="headerlink" href="#harry-potter-18" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p><em>Expelliarmus</em>
@@ -1122,7 +1123,7 @@
     &gt; <strong>Move</strong> 1<code>magic power</code>,make the target <code>vertigo</code> the next turn, only takes effect when the target is not attacking you or blocking; can be rebounced</p>
 </li>
 </ul>
-<h4 id="snape-12">Snape <code>12</code></h4>
+<h4 id="snape-12">Snape <code>12</code><a class="headerlink" href="#snape-12" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p><em>Sectumsempra</em>
@@ -1133,68 +1134,68 @@
     &gt; <strong>Active</strong> 1<code>magic power</code> when you cause damage to one player, he needs to tell you what he will do the next turn, this can't take effective in two turns in a row.</p>
 </li>
 </ul>
-<h3 id="cca_1">CCA玩家系列</h3>
-<h4 id="cca-15">混乱的CCA玩家 <code>15</code></h4>
+<h3 id="cca_1">CCA玩家系列<a class="headerlink" href="#cca_1" title="Permanent link">&para;</a></h3>
+<h4 id="cca-15">混乱的CCA玩家 <code>15</code><a class="headerlink" href="#cca-15" title="Permanent link">&para;</a></h4>
 <p>（改版，未测试）
 * 黑白颠倒
     &gt; 回合开始时，你可以指定两个行动并选择一项：1.本回合其所需要资源数对调，2.若都是攻击行动，其本回合攻击力等级和伤害对调</p>
-<h3 id="_8">人名英雄技能</h3>
-<h4 id="1">阿绿 <code>1</code></h4>
+<h3 id="_8">人名英雄技能<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<h4 id="1">阿绿 <code>1</code><a class="headerlink" href="#1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>只挑一条<blockquote>
 <p>和你交互的角色体力值均视为只有一条</p>
 </blockquote>
 </li>
 </ul>
-<h4 id="12_9">潘浩然 <code>12</code></h4>
+<h4 id="12_9">潘浩然 <code>12</code><a class="headerlink" href="#12_9" title="Permanent link">&para;</a></h4>
 <ul>
 <li>变换手势<blockquote>
 <p>只要场上大于一半人同意，你就可以变换手势 </p>
 </blockquote>
 </li>
 </ul>
-<h4 id="8_2">界潘浩然 <code>8</code></h4>
+<h4 id="8_2">界潘浩然 <code>8</code><a class="headerlink" href="#8_2" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>只要场上大于等于一半人同意，你就可以变换手势</p>
 </blockquote>
-<h4 id="sp-6">sp潘浩然 <code>6</code></h4>
+<h4 id="sp-6">sp潘浩然 <code>6</code><a class="headerlink" href="#sp-6" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>只要你自己同意，你就意变换手势，CD：1</p>
 </blockquote>
-<h4 id="3_1">神潘浩然 <code>3</code></h4>
+<h4 id="3_1">神潘浩然 <code>3</code><a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>只要你自己同意，你就可以变换手势 </p>
 </blockquote>
-<h3 id="syt">syt</h3>
-<h4 id="18_8">新唐僧 <code>18</code></h4>
+<h3 id="syt">syt<a class="headerlink" href="#syt" title="Permanent link">&para;</a></h3>
+<h4 id="18_8">新唐僧 <code>18</code><a class="headerlink" href="#18_8" title="Permanent link">&para;</a></h4>
 <ul>
 <li>莫要杀僧<blockquote>
 <p><strong>行动技</strong> 双手合十，眩晕该轮对你进行攻击者，并获得其消耗的对应资源，该角色本局游戏不得使用相同手势对你进行攻击。当你使用该技能时，本轮所受伤害不超过存活角色数</p>
 </blockquote>
 </li>
 </ul>
-<h4 id="15_35">王也 <code>15</code></h4>
+<h4 id="15_35">王也 <code>15</code><a class="headerlink" href="#15_35" title="Permanent link">&para;</a></h4>
 <ul>
 <li>乱金柝<blockquote>
 <p><strong>被动</strong> 你攻击命中的角色下一轮需重复本轮手势，重复时不消耗资源，优先级低于眩晕</p>
 </blockquote>
 </li>
 </ul>
-<h4 id="15_36">戏志才 <code>15</code></h4>
+<h4 id="15_36">戏志才 <code>15</code><a class="headerlink" href="#15_36" title="Permanent link">&para;</a></h4>
 <ul>
 <li>先辅<blockquote>
 <p>游戏开始时，选中场上一名角色，该角色造成n点伤害你获得n发子弹，受到n点伤害你获得n把剑，你可将获得的资源*2转给该角色，若你选定的角色死亡则你可以再指定自己</p>
 </blockquote>
 </li>
 </ul>
-<h4 id="15_37">老顽童 <code>15</code></h4>
+<h4 id="15_37">老顽童 <code>15</code><a class="headerlink" href="#15_37" title="Permanent link">&para;</a></h4>
 <ul>
 <li>左右互搏<blockquote>
 <p>进攻手势视为对全场依次使用，并且可以左右两只手分别使用不同进攻手势，都同时参与结算。（若其中一手势攻击力等级大于对方，则不会受到伤害）</p>
 </blockquote>
 </li>
 </ul>
-<h4 id="12_10">蒲元 <code>12</code></h4>
+<h4 id="12_10">蒲元 <code>12</code><a class="headerlink" href="#12_10" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>铸刃</p>
@@ -1210,7 +1211,7 @@
 </blockquote>
 </li>
 </ul>
-<h4 id="20_12">刘焉 <code>20</code></h4>
+<h4 id="20_12">刘焉 <code>20</code><a class="headerlink" href="#20_12" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>图射</p>
@@ -1225,28 +1226,28 @@
 </blockquote>
 </li>
 </ul>
-<h4 id="12_11">左慈 <code>12</code></h4>
+<h4 id="12_11">左慈 <code>12</code><a class="headerlink" href="#12_11" title="Permanent link">&para;</a></h4>
 <ul>
 <li>化身<blockquote>
 <p>你可选择场上一名初始血量大于等于你的角色，拥有它的技能，每受一次伤害，可换选另一名角色</p>
 </blockquote>
 </li>
 </ul>
-<h4 id="18_9">沙摩柯 <code>18</code></h4>
+<h4 id="18_9">沙摩柯 <code>18</code><a class="headerlink" href="#18_9" title="Permanent link">&para;</a></h4>
 <ul>
 <li>蒺藜<blockquote>
 <p>记你本局剑数目为n，当你本局造成伤害恰等于n时，可获得2n个资源</p>
 </blockquote>
 </li>
 </ul>
-<h4 id="15_38">郝昭 <code>15</code></h4>
+<h4 id="15_38">郝昭 <code>15</code><a class="headerlink" href="#15_38" title="Permanent link">&para;</a></h4>
 <ul>
 <li>镇骨<blockquote>
 <p>每回合结算结束时你指定一名角色，将子弹和可用剑数目修改至与你相同</p>
 </blockquote>
 </li>
 </ul>
-<h4 id="5">神关羽 <code>5</code></h4>
+<h4 id="5">神关羽 <code>5</code><a class="headerlink" href="#5" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>武魂</p>
@@ -1261,8 +1262,8 @@
 </blockquote>
 </li>
 </ul>
-<h2 id="_9">待回忆英雄&amp;带测试英雄</h2>
-<h3 id="_10">待回忆英雄</h3>
+<h2 id="_9">待回忆英雄&amp;带测试英雄<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<h3 id="_10">待回忆英雄<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
 <p>chl：李牧，白起，廉颇，王翦，姜维，贾诩，哪吒，凯撒，西施，武松，杨玉环，织田信长，东皇太一，转轮王，李信，司马错，干将莫邪，狄仁杰，狄青，钟会，曹丕，
     姜子牙，王昭君</p>
 <p>dgz：唐僧，
@@ -1274,14 +1275,14 @@
 <p>界：界马良，界张飞，界李牧，界张角</p>
 <p>神：神马良，神关羽，神汤姆，神李信，系统</p>
 <p>CCA玩家：愤怒，欠打，暴力，贪婪，无耻，慷慨，坚韧</p>
-<h3 id="_11">待测试英雄</h3>
-<h4 id="15_39">杰瑞 <code>15</code></h4>
+<h3 id="_11">待测试英雄<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<h4 id="15_39">杰瑞 <code>15</code><a class="headerlink" href="#15_39" title="Permanent link">&para;</a></h4>
 <ul>
 <li>鸟哨 
     &gt; <strong>主动</strong> 回合开始阶段，你可以消耗2n发子弹召唤NPC金丝雀
     &gt; <strong>金丝雀属性</strong> HP:2*场上人数，每回合对场上所有人进行一个造成两点伤害和眩晕的<code>爆竹投掷</code>，其攻击力等于给枪，可以被单挡和双挡防御，被反弹反弹。金丝雀不受<code>爆竹投掷</code>伤害</li>
 </ul>
-<h4 id="18_10">侍卫 <code>18</code></h4>
+<h4 id="18_10">侍卫 <code>18</code><a class="headerlink" href="#18_10" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>警戒
@@ -1292,10 +1293,10 @@
     &gt; <strong>限定技</strong> 回合开始阶段，你可以消耗2n把剑，进入n回合的<code>开炮</code>状态，获得两层护盾，并且<code>开炮</code>状态下子弹类攻击消耗-1，伤害+1</p>
 </li>
 </ul>
-<h4 id="_12">小剑客</h4>
-<h4 id="_13">马良</h4>
-<h4 id="_14">新张飞</h4>
-<h4 id="_15">李白</h4>
+<h4 id="_12">小剑客<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h4>
+<h4 id="_13">马良<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h4>
+<h4 id="_14">新张飞<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h4>
+<h4 id="_15">李白<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h4>
               
             </div>
           </div><footer>
@@ -1331,15 +1332,14 @@
     
   </span>
 </div>
-    <script src="../js/jquery-3.6.0.min.js"></script>
-    <script>var base_url = "..";</script>
-    <script src="../js/theme_extra.js"></script>
-    <script src="../js/theme.js"></script>
-      <script src="../search/main.js"></script>
-    <script>
-        jQuery(function () {
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
             SphinxRtdTheme.Navigation.enable(true);
-        });
+        };
     </script>
 
 </body>

@@ -8,7 +8,7 @@
     <title>如何添加英雄 - CCA Tutorial</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
       <script>
         // Current page data
@@ -17,11 +17,12 @@
         var mkdocs_page_url = null;
       </script>
     
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
     <!--[if lt IE 9]>
       <script src="../js/html5shiv.min.js"></script>
     <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-      <script>hljs.highlightAll();</script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -33,7 +34,7 @@
           <a href=".." class="icon icon-home"> CCA Tutorial
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -54,7 +55,7 @@
               <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" href="../%E7%BD%91%E7%AB%99%E4%BF%AE%E6%94%B9%E6%95%99%E7%A8%8B/">网站修改教程</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">如何添加英雄</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">如何添加英雄</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#_2">逻辑概述</a>
     </li>
@@ -97,9 +98,9 @@
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">Tutorial</li>
-      <li class="breadcrumb-item active">如何添加英雄</li>
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Tutorial &raquo;</li>
+      <li>如何添加英雄</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -108,11 +109,11 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="_1">简单英雄构建流程</h1>
+                <h1 id="_1">简单英雄构建流程<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <p>@author：syt</p>
 <p>这是最简单最弱智的英雄的构建的教程(例如monkey)</p>
 <p>一些机制比较特殊的英雄(如后羿需要专门构建动作)的进阶教程请查看其他文档(如果写了的话)</p>
-<h2 id="_2">逻辑概述</h2>
+<h2 id="_2">逻辑概述<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>AllPlayers类下有</p>
 <blockquote>
 <p>public List<Hero> heroes;</p>
@@ -120,18 +121,18 @@
 <p>具体内容请自行查阅，里面存储的核心内容即hero.heroname</p>
 <p>后在BeforeAttack和AfterAttack中添加对应内容</p>
 <p>(注：instance为玩家动作选择后，描述实际造成效果的类，对其的修改就是对最终效果的修改)</p>
-<h2 id="_3">添加英雄名字</h2>
+<h2 id="_3">添加英雄名字<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p><img alt="image-20240715182209487" src="https://typorasyt.oss-cn-nanjing.aliyuncs.com/202407151822626.png" /></p>
 <p>在HeroManager 对象中下挂了 所有已完成英雄的名字的列表。</p>
 <p>这里添加你要写的英雄的名字，注意遵循命名大小写规则(中文名就按照中文名英化的规则来)。 (这里hero的复数形式有问题，无伤大雅，找得到就行)</p>
-<h2 id="_4">添加技能效果</h2>
+<h2 id="_4">添加技能效果<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>考虑BeforeAttack和AfterAttack两个类</p>
 <p>找到对应的函数添加几行代码</p>
-<h3 id="_5">举例</h3>
+<h3 id="_5">举例<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <p>猴子的伤害要乘以三</p>
 <p>找到BuffAttack函数后，对照名字添加效果</p>
 <p><img alt="image-20240715220631017" src="https://typorasyt.oss-cn-nanjing.aliyuncs.com/202407152206153.png" /></p>
-<h2 id="_6">测试</h2>
+<h2 id="_6">测试<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <p>保存好文件后</p>
 <p>进行简单测试，并且把添加到测试需求中，等待测试选手完成</p>
               
@@ -169,15 +170,14 @@
     
   </span>
 </div>
-    <script src="../js/jquery-3.6.0.min.js"></script>
-    <script>var base_url = "..";</script>
-    <script src="../js/theme_extra.js"></script>
-    <script src="../js/theme.js"></script>
-      <script src="../search/main.js"></script>
-    <script>
-        jQuery(function () {
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
             SphinxRtdTheme.Navigation.enable(true);
-        });
+        };
     </script>
 
 </body>
