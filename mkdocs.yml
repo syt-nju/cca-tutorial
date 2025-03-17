@@ -6,13 +6,15 @@ nav:
     - 简明规则体系: CCA解释-简明.md
   - Tutorial:  
     - 网站修改教程: 网站修改教程.md
+  - Infos:
+    - 开发计划: 开发计划.md 
+  - Remains:
     - 如何添加英雄: 简单英雄构建流程.md
     - 如何设计关卡: 简单关卡构建流程.md
-  - Infos: 
-    - 英雄文档: CCA英雄.md
-    - 工作任务&测试&反馈: 工作任务.md
     - 对照表: 对照表.md
     - 关于策划: 关于策划.md
+    - 英雄文档: CCA英雄.md
+    - 工作任务&测试&反馈: 工作任务.md
 theme: readthedocs
 markdown_extensions:
   - toc:
