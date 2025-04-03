@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>特效需求 - CCA Tutorial</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\u7279\u6548\u9700\u6c42";
+        var mkdocs_page_input_path = "\u7279\u6548\u9700\u6c42.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> CCA Tutorial
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">To Newcomers</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../%E7%AE%80%E4%BB%8B/">简介</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CCA%E8%A7%A3%E9%87%8A-%E7%AE%80%E6%98%8E/">简明规则体系</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tutorial</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../%E7%BD%91%E7%AB%99%E4%BF%AE%E6%94%B9%E6%95%99%E7%A8%8B/">网站修改教程</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Infos</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" >开发计划</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">特效需求</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#_2">总体阶段</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_3">详细的需求点</a>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >会议记录</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BC%9A%E8%AE%AE%E8%AE%B0%E5%BD%95/">第二次会议记录</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../%E7%AC%AC%E4%B8%89%E6%AC%A1%E4%BC%9A%E8%AE%AE%E8%AE%B0%E5%BD%95/">第三次会议记录</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../%E7%AC%AC%E5%9B%9B%E6%AC%A1%E4%BC%9A%E8%AE%AE%E8%AE%B0%E5%BD%95/">第四次会议记录</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Remains</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../%E7%AE%80%E5%8D%95%E8%8B%B1%E9%9B%84%E6%9E%84%E5%BB%BA%E6%B5%81%E7%A8%8B/">如何添加英雄</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../%E7%AE%80%E5%8D%95%E5%85%B3%E5%8D%A1%E6%9E%84%E5%BB%BA%E6%B5%81%E7%A8%8B/">如何设计关卡</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../%E5%AF%B9%E7%85%A7%E8%A1%A8/">对照表</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../%E5%85%B3%E4%BA%8E%E7%AD%96%E5%88%92/">关于策划</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../CCA%E8%8B%B1%E9%9B%84/">英雄文档</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../%E5%B7%A5%E4%BD%9C%E4%BB%BB%E5%8A%A1/">工作任务&测试&反馈</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">CCA Tutorial</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Infos</li>
+          <li class="breadcrumb-item">开发计划</li>
+      <li class="breadcrumb-item active">特效需求</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h3 id="_1">特效需求<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<h4 id="_2">总体阶段<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
+<ol>
+<li>
+<p>出牌阶段，各个玩家展示行动</p>
+</li>
+<li>
+<p>结算阶段，进行各个行动的结算和行动与行动</p>
+</li>
+<li>
+<p>过来动画</p>
+</li>
+<li>
+<p>防御反弹动画</p>
+</li>
+<li>
+<p>补给动画</p>
+</li>
+<li>
+<p>挑衅动画</p>
+</li>
+<li>
+<p>攻击动画（和特效同学讨论）</p>
+<p>（1）两端法：攻击者，被攻击者</p>
+<p>（2）连续法：攻击者，被攻击者</p>
+</li>
+</ol>
+<h4 id="_3">详细的需求点<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<h5 id="_4">出牌阶段<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h5>
+<ol>
+<li>出牌的动画，可以先拿任何一个卡牌进行实现，这个卡牌展现从人物那边出现，翻转，有打击感地拍在桌面上，并且</li>
+<li>高亮效果，当玩家把鼠标移动至卡牌后，卡牌变大并呈现高亮效果</li>
+</ol>
+<h5 id="_5">结算阶段<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h5>
+<ol>
+<li>补给</li>
+</ol>
+<p>（1）获得子弹的动画，设想一个简单的子弹icon出现的动画</p>
+<p>（2）获得剑的动画，设想一个简单的剑icon出现的动画</p>
+<p>（3）当补给的剑或者子弹被其他人过来，展现一个简单子弹或剑icon吸走的动画，这个也需要考虑用两端法还是连续法</p>
+<p>同时在玩家的状态栏显示上方浮动显示+1，表示玩家的状态已经补给完毕</p>
+<ol start="2">
+<li>防御反弹</li>
+</ol>
+<p>（1）防御行动：挡，双挡，重挡，巨盾，目前都做一个统一的防御动画就好，用不太有实感的防御icon表示，参考杀戮尖塔的加盾效果</p>
+<p>（2）反弹行动：反弹，亮剑，缴械，镜面反射，这个不太可能做一个统一的反弹动画，是需要每个完成一个动画的</p>
+<ol start="3">
+<li>
+<p>过来：一个类似于“吸收”的动画，做的也不要太有实感，可以参考一些动作小游戏里面角色放招动画，我目前没有想到太好的例子</p>
+</li>
+<li>
+<p>攻击（大头）：（以下以两端法为例子）</p>
+</li>
+</ol>
+<p>（1）枪，双枪：这两个动画应该类似</p>
+<blockquote>
+<p>发射的动画</p>
+<p>被挡住的动画</p>
+<p>被命中的动画</p>
+<p>被反弹的动画（仅给枪有，双枪没有）</p>
+<ul>
+<li>
+<p>这里被命中的动画可以与后面的简并，看实际情况，因为本质都是受伤掉血</p>
+</li>
+<li>
+<p>这里被反弹的动画可以被拆分成攻击+反弹特效+攻击的反向轨道（连续法），或者攻击者发动攻击+反弹特效+攻击者自己被命中（两端法）</p>
+</li>
+</ul>
+</blockquote>
+<p>（2）激光枪，激光炮</p>
+<blockquote>
+<p>发射的动画</p>
+<p>被挡住的动画</p>
+<p>被命中的动画</p>
+<p>被反弹的动画</p>
+<p>被镜面反射反弹的动画</p>
+</blockquote>
+<p>（3）RPG，双RPG</p>
+<blockquote>
+<p>发射的动画</p>
+<p>被挡住的动画</p>
+<p>被命中的动画</p>
+<p>被反弹的动画（仅RPG有，双RPG没有）</p>
+</blockquote>
+<p>（4）核弹</p>
+<blockquote>
+<p>发射的动画（无端联想到红警的warning, nuclear missile launched~ 或许可以借鉴）</p>
+<p>被命中的动画</p>
+<p>被溅射到的动画</p>
+<p>被反弹的动画</p>
+</blockquote>
+<p>（5）刺</p>
+<blockquote>
+<p>进行攻击的动画</p>
+<p>被命中的动画</p>
+<p>被亮剑反弹的动画</p>
+<p>被挡住的动画</p>
+<p>被缴械的动画</p>
+<ul>
+<li>由于考虑到我们有这种“近战”的攻击，感觉连续法就不好用了，是否使用两端法更好？</li>
+<li>缴械是一个反制行动，效果是使得攻击者下回合不得使用剑，这里需要思考一下什么样的表现形式好一点？或许攻击者被禁锢，被捆绑，亦或者剑被折断？综合评估选择一下</li>
+</ul>
+</blockquote>
+<p>（6）砍</p>
+<blockquote>
+<p>进行攻击的动画</p>
+<p>被命中的动画</p>
+<p>被挡住的动画</p>
+<p>被缴械的动画</p>
+</blockquote>
+<p>（7）鬼斩，箭尾斩</p>
+<blockquote>
+<p>进行攻击的动画</p>
+<p>被命中的动画</p>
+<p>被挡住的动画</p>
+</blockquote>
+<p>（8）光剑光刀</p>
+<blockquote>
+<p>进行攻击的动画</p>
+<p>被命中的动画</p>
+<p>被挡住的动画</p>
+<p>被镜面反射反弹的动画</p>
+<p>被缴械的动画</p>
+<p>光剑被反弹的动画</p>
+</blockquote>
+<ul>
+<li>攻击：简明版</li>
+</ul>
+<p>各个攻击行动的攻击特效、命中特效、被防御住特效、被各种反弹、反制行动生效的特效。</p>
+<p>看实际工作过程中，有很多内容可以简并的，可以根据现阶段技术能力进行合理的简化，</p>
+<ol start="5">
+<li>挑衅</li>
+</ol>
+<p>（1）挑衅者的发动动画</p>
+<p>（2）被挑衅者的动画，可以做一个红温效果</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../%E7%BD%91%E7%AB%99%E4%BF%AE%E6%94%B9%E6%95%99%E7%A8%8B/" class="btn btn-neutral float-left" title="网站修改教程"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BC%9A%E8%AE%AE%E8%AE%B0%E5%BD%95/" class="btn btn-neutral float-right" title="第二次会议记录">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../%E7%BD%91%E7%AB%99%E4%BF%AE%E6%94%B9%E6%95%99%E7%A8%8B/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BC%9A%E8%AE%AE%E8%AE%B0%E5%BD%95/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
